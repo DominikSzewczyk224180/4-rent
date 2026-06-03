@@ -1,0 +1,54 @@
+<svg viewBox="0 0 480 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ładowarka teleskopowa obrotowa">
+  <!-- linie pomocnicze -->
+  <g stroke="#9db3c4" stroke-width="1.5" stroke-dasharray="2 6" opacity="0.7" fill="none">
+    <path d="M50 358 H430"/>
+  </g>
+  <ellipse cx="240" cy="356" rx="180" ry="9" fill="#152F4F" opacity="0.08"/>
+
+  <!-- stopy podporowe -->
+  <g fill="#152F4F">
+    <rect x="56" y="342" width="34" height="10" rx="3"/>
+    <rect x="112" y="344" width="32" height="10" rx="3"/>
+    <rect x="338" y="344" width="32" height="10" rx="3"/>
+    <rect x="392" y="342" width="34" height="10" rx="3"/>
+  </g>
+  <!-- podpory (outriggery) -->
+  <g stroke="#152F4F" stroke-width="12" stroke-linecap="round" fill="none">
+    <path d="M164 292 L74 344"/>
+    <path d="M180 296 L128 346"/>
+    <path d="M316 292 L406 344"/>
+    <path d="M300 296 L352 346"/>
+  </g>
+
+  <!-- koła (uniesione) -->
+  <circle cx="174" cy="322" r="20" fill="#152F4F"/>
+  <circle cx="174" cy="322" r="8" fill="#52748F"/>
+  <circle cx="306" cy="322" r="20" fill="#152F4F"/>
+  <circle cx="306" cy="322" r="8" fill="#52748F"/>
+
+  <!-- rama nośna -->
+  <rect x="150" y="286" width="180" height="30" rx="6" fill="#152F4F"/>
+
+  <!-- obrotnica / wieniec -->
+  <rect x="194" y="252" width="92" height="36" rx="6" fill="#1d3a5c"/>
+  <rect x="206" y="244" width="68" height="12" rx="3" fill="#152F4F"/>
+
+  <!-- wskaźnik obrotu 360° -->
+  <path d="M168 244 Q240 184 312 244" stroke="#f5a623" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M312 244 l-4 -13 l13 4 Z" fill="#f5a623"/>
+  <path d="M168 244 l4 -13 l-13 4 Z" fill="#f5a623"/>
+
+  <!-- kabina na obrotnicy -->
+  <rect x="204" y="208" width="48" height="46" rx="4" fill="#152F4F"/>
+  <rect x="212" y="216" width="32" height="20" rx="2" fill="#52748F" opacity="0.55"/>
+
+  <!-- wysięgnik teleskopowy -->
+  <path d="M250 256 L370 138" stroke="#152F4F" stroke-width="22" stroke-linecap="round"/>
+  <path d="M268 252 L366 142" stroke="#52748F" stroke-width="4" stroke-dasharray="3 9" opacity="0.75"/>
+  <circle cx="252" cy="256" r="10" fill="#52748F"/>
+
+  <!-- karetka + widły -->
+  <path d="M374 120 V172" stroke="#152F4F" stroke-width="9" stroke-linecap="round"/>
+  <path d="M374 148 H430" stroke="#152F4F" stroke-width="7" stroke-linecap="round"/>
+  <path d="M374 168 H430" stroke="#152F4F" stroke-width="7" stroke-linecap="round"/>
+</svg>

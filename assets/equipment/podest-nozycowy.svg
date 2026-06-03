@@ -1,0 +1,52 @@
+<svg viewBox="0 0 480 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Podest nożycowy">
+  <!-- linie pomocnicze (blueprint) -->
+  <g stroke="#9db3c4" stroke-width="1.5" stroke-dasharray="2 6" fill="none" opacity="0.7">
+    <path d="M70 358 H410"/>
+    <path d="M96 58 V340"/>
+  </g>
+  <g fill="#52748F" opacity="0.85">
+    <path d="M88 66 L96 56 L104 66 Z"/>
+    <path d="M88 332 L96 342 L104 332 Z"/>
+  </g>
+
+  <ellipse cx="240" cy="356" rx="150" ry="9" fill="#152F4F" opacity="0.08"/>
+
+  <!-- koła -->
+  <circle cx="170" cy="338" r="22" fill="#152F4F"/>
+  <circle cx="170" cy="338" r="9" fill="#52748F"/>
+  <circle cx="310" cy="338" r="22" fill="#152F4F"/>
+  <circle cx="310" cy="338" r="9" fill="#52748F"/>
+
+  <!-- podwozie -->
+  <rect x="138" y="300" width="204" height="34" rx="6" fill="#152F4F"/>
+  <rect x="320" y="286" width="8" height="16" rx="2" fill="#152F4F"/>
+  <circle cx="324" cy="283" r="6" fill="#f5a623"/>
+
+  <!-- mechanizm nożycowy -->
+  <g stroke="#152F4F" stroke-width="11" stroke-linecap="round" fill="none">
+    <path d="M186 300 L294 240"/>
+    <path d="M294 300 L186 240"/>
+    <path d="M186 240 L294 180"/>
+    <path d="M294 240 L186 180"/>
+    <path d="M186 180 L294 120"/>
+    <path d="M294 180 L186 120"/>
+  </g>
+  <g fill="#52748F">
+    <circle cx="240" cy="270" r="6"/>
+    <circle cx="240" cy="210" r="6"/>
+    <circle cx="240" cy="150" r="6"/>
+    <circle cx="186" cy="240" r="5"/>
+    <circle cx="294" cy="240" r="5"/>
+    <circle cx="186" cy="180" r="5"/>
+    <circle cx="294" cy="180" r="5"/>
+  </g>
+
+  <!-- platforma -->
+  <rect x="150" y="100" width="180" height="22" rx="4" fill="#152F4F"/>
+  <g stroke="#152F4F" stroke-width="7" stroke-linecap="round" fill="none">
+    <path d="M160 100 V52"/>
+    <path d="M320 100 V52"/>
+    <path d="M160 76 H320"/>
+  </g>
+  <path d="M156 52 H324" stroke="#f5a623" stroke-width="8" stroke-linecap="round"/>
+</svg>

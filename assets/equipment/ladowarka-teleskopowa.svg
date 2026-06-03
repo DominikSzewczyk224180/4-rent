@@ -1,0 +1,39 @@
+<svg viewBox="0 0 480 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ładowarka teleskopowa">
+  <!-- linie pomocnicze -->
+  <g stroke="#9db3c4" stroke-width="1.5" stroke-dasharray="2 6" opacity="0.7" fill="none">
+    <path d="M50 358 H430"/>
+  </g>
+  <ellipse cx="246" cy="356" rx="172" ry="9" fill="#152F4F" opacity="0.08"/>
+
+  <!-- nadwozie -->
+  <path d="M96 296 L96 268 Q96 258 106 256 L150 250 L168 214 L250 214 L266 250 L360 254 Q380 256 384 274 L388 296 Q390 310 376 310 L112 310 Q94 310 96 296 Z" fill="#152F4F"/>
+
+  <!-- okno kabiny -->
+  <path d="M176 222 L244 222 L256 248 L176 248 Z" fill="#52748F" opacity="0.55"/>
+  <path d="M210 222 V248" stroke="#0d1f36" stroke-width="3"/>
+
+  <!-- beleczka sygnalizacyjna -->
+  <rect x="172" y="206" width="7" height="12" rx="2" fill="#152F4F"/>
+  <circle cx="175.5" cy="203" r="5.5" fill="#f5a623"/>
+
+  <!-- koła -->
+  <circle cx="150" cy="318" r="38" fill="#152F4F"/>
+  <circle cx="150" cy="318" r="26" fill="#0d1f36"/>
+  <circle cx="150" cy="318" r="11" fill="#52748F"/>
+  <circle cx="348" cy="318" r="38" fill="#152F4F"/>
+  <circle cx="348" cy="318" r="26" fill="#0d1f36"/>
+  <circle cx="348" cy="318" r="11" fill="#52748F"/>
+
+  <!-- wysięgnik teleskopowy -->
+  <path d="M120 260 L356 150" stroke="#152F4F" stroke-width="22" stroke-linecap="round"/>
+  <path d="M150 246 L352 152" stroke="#52748F" stroke-width="4" stroke-dasharray="3 9" opacity="0.75"/>
+  <circle cx="124" cy="258" r="10" fill="#52748F"/>
+
+  <!-- karetka + widły -->
+  <path d="M360 132 V184" stroke="#152F4F" stroke-width="9" stroke-linecap="round"/>
+  <path d="M360 160 H418" stroke="#152F4F" stroke-width="7" stroke-linecap="round"/>
+  <path d="M360 180 H418" stroke="#152F4F" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- ładunek -->
+  <rect x="372" y="120" width="40" height="38" rx="2" fill="none" stroke="#f5a623" stroke-width="6"/>
+</svg>
