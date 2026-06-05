@@ -1,5 +1,5 @@
 /* ==========================================================================
-   4RENT — interakcje (one-pager)
+   4RENT · interakcje (one-pager)
    menu mobilne · cień nagłówka · scroll-reveal · scrollspy · rok w stopce
    ========================================================================== */
 (function () {
@@ -102,7 +102,7 @@
     );
     sections.forEach(function (s) { spy.observe(s); });
 
-    // u samej góry — bez aktywnej pozycji; przy dole — ostatnia
+    // u samej góry: bez aktywnej pozycji; przy dole: ostatnia
     window.addEventListener("scroll", function () {
       if (window.scrollY < 120) {
         navLinks.forEach(function (l) { l.classList.remove("is-active"); });

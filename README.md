@@ -1,13 +1,13 @@
-# 4Rent — strona internetowa
+# 4Rent · strona internetowa
 
 Industrialna strona-wizytówka firmy **4Rent Wypożyczalnia Maszyn Budowlanych sp. z o.o.**
-(wynajem podestów ruchomych i ładowarek teleskopowych — Śląsk).
+(wynajem podestów ruchomych i ładowarek teleskopowych · Śląsk).
 
 Całość to **jedna strona** (`index.html`) z płynnym przewijaniem do sekcji:
 Oferta → Realizacje → Atuty → Obszar → O nas → Kontakt.
 
 Zbudowana w czystym HTML + CSS + odrobinie JavaScriptu. Bez frameworków,
-bez procesu budowania, bez zależności do instalowania. Wgrywasz pliki — działa.
+bez procesu budowania, bez zależności do instalowania. Wgrywasz pliki, gotowe.
 Idealne pod **GitHub Pages**.
 
 ---
@@ -24,7 +24,7 @@ Idealne pod **GitHub Pages**.
 └── assets/
     ├── logo-4r.svg         ← logo (emblemat 4R) jako czysty wektor
     ├── favicon.svg         ← ikonka strony (w karcie przeglądarki)
-    └── photos/             ← zdjęcia maszyn (już dodane — instrukcja podmiany w środku)
+    └── photos/             ← zdjęcia maszyn (już dodane, instrukcja podmiany w środku)
         ├── hero.jpg
         ├── podest-nozycowy.jpg
         ├── podest-nozycowy-diesel.jpg
@@ -40,8 +40,8 @@ Idealne pod **GitHub Pages**.
 
 ## Podgląd na własnym komputerze
 
-Kliknij dwukrotnie `index.html` — otworzy się w przeglądarce i zadziała w całości.
-(Formularz kontaktowy otwiera program pocztowy — patrz sekcja „Formularz" niżej.)
+Kliknij dwukrotnie `index.html`, otworzy się w przeglądarce i zadziała w całości.
+(Formularz kontaktowy otwiera program pocztowy, patrz sekcja „Formularz" niżej.)
 
 ---
 
@@ -49,7 +49,7 @@ Kliknij dwukrotnie `index.html` — otworzy się w przeglądarce i zadziała w c
 
 1. Załóż repozytorium na GitHub (np. `4rent-website`).
 2. Wgraj **całą zawartość tego folderu** (pliki `index.html`, `css/`, `js/`,
-   `assets/`) do głównego katalogu repozytorium — nie do podfolderu.
+   `assets/`) do głównego katalogu repozytorium, nie do podfolderu.
 3. W repo: **Settings → Pages**.
 4. W „Build and deployment" → **Source: Deploy from a branch**.
 5. Wybierz gałąź **main** i folder **/ (root)**, kliknij **Save**.
@@ -71,7 +71,7 @@ Kliknij dwukrotnie `index.html` — otworzy się w przeglądarce i zadziała w c
 
 Wszystko jest w `index.html`, posekcjonowane czytelnymi komentarzami
 (`<!-- ===== OFERTA ===== -->` itd.). Otwórz plik w dowolnym edytorze tekstu
-i zmień to, co chcesz — opisy maszyn, parametry, listę miast, dane kontaktowe.
+i zmień to, co chcesz: opisy maszyn, parametry, listę miast, dane kontaktowe.
 
 - **Telefon / e-mail** zmieniasz w trzech miejscach: górny pasek, sekcja Kontakt,
   stopka. Szukaj `509238087` oraz `biuro@4-rent.com.pl`.
@@ -84,12 +84,12 @@ Kolory są zdefiniowane raz, na górze `css/styles.css`, w sekcji `:root`.
 Najważniejsze:
 
 ```css
---navy:   #152F4F;   /* granat — kolor marki, tła sekcji */
---steel:  #52748F;   /* stal — kolor marki, detale */
---accent: #2E90E5;   /* azure — akcent (przyciski, podkreślenia, kropki) */
+--navy:   #152F4F;   /* granat, kolor marki, tła sekcji */
+--steel:  #52748F;   /* stal, kolor marki, detale */
+--accent: #2E90E5;   /* azure, akcent (przyciski, podkreślenia, kropki) */
 ```
 
-Zmieniasz wartość w jednym miejscu — zmienia się w całej stronie.
+Zmieniasz wartość w jednym miejscu, zmienia się w całej stronie.
 
 ## Zdjęcia
 
@@ -100,14 +100,14 @@ Szczegóły (zalecane wymiary, waga) w pliku `assets/photos/README.txt`.
 ## Fonty
 
 Strona używa fontów Google (Saira Condensed, Hanken Grotesk, JetBrains Mono),
-ładowanych automatycznie z internetu — nic nie trzeba instalować.
+ładowanych automatycznie z internetu, nic nie trzeba instalować.
 
 ## Formularz kontaktowy
 
 Formularz w sekcji Kontakt działa przez **mailto**: po wysłaniu otwiera program
 pocztowy klienta z gotową, uzupełnioną wiadomością do `biuro@4-rent.com.pl`.
-Nie wymaga serwera ani backendu — działa na GitHub Pages od razu.
+Nie wymaga serwera ani backendu, działa na GitHub Pages od razu.
 
 Jeśli wolisz, żeby zgłoszenia przychodziły bez otwierania poczty (klasyczny
 formularz wysyłany w tle), można go podłączyć pod darmową usługę typu
-**Formspree** lub **Getform** — wystarczy podmienić obsługę wysyłki. Daj znać.
+**Formspree** lub **Getform** (wystarczy podmienić obsługę wysyłki). Daj znać.
