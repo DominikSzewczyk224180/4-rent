@@ -478,7 +478,7 @@ body.menu-open .nav-backdrop{opacity:1;visibility:visible}
 .about__emblem-frame .logo__mark{width:54%;height:54%;color:#fff}
 .about__ring-text{position:absolute;inset:0;animation:spin 60s linear infinite}
 @media (prefers-reduced-motion:reduce){.about__ring-text{animation:none}}
-.about__ring-text text{font-family:var(--font-mono);font-weight:600;font-size:8px;letter-spacing:1.8px;fill:var(--steel-light);text-transform:uppercase}
+.about__ring-text text{font-family:var(--font-mono);font-weight:600;font-size:8px;letter-spacing:2px;fill:var(--steel-light);text-transform:uppercase}
 @keyframes spin{to{transform:rotate(360deg)}}
 
 /* ---------- 16. KONTAKT ---------- */
