@@ -1,90 +1,40 @@
-====================================================================
- 4RENT — JAK DODAĆ WŁASNE ZDJĘCIA MASZYN
-====================================================================
+ZDJĘCIA MASZYN — 4RENT
+======================
 
-Strona jest dostarczona z autorskimi ilustracjami technicznymi maszyn
-(folder assets/equipment/*.svg). Wyglądają spójnie i działają od razu,
-ale w każdej chwili możesz podmienić je na PRAWDZIWE ZDJĘCIA sprzętu.
-Ten folder (assets/photos/) jest na to przygotowany.
+Zdjęcia są JUŻ DODANE i podpięte pod stronę. Ten plik tłumaczy tylko,
+jak je ewentualnie podmienić na własne (np. zdjęcia Twojego sprzętu).
 
+PLIKI W TYM FOLDERZE
+--------------------
+  hero.jpg                          tło głównego ekranu (na samej górze strony)
+  podest-nozycowy.jpg               karta: Podest nożycowy — elektryczny
+  podest-nozycowy-diesel.jpg        karta: Podest nożycowy — diesel  (+ galeria)
+  podest-przegubowy.jpg             karta: Podest przegubowy — diesel
+  podest-przegubowy-elektryczny.jpg karta: Podest przegubowy — elektryczny (+ galeria)
+  ladowarka-teleskopowa.jpg         karta: Ładowarka teleskopowa  (+ galeria)
+  ladowarka-obrotowa.jpg            karta: Ładowarka obrotowa 360°
+  realizacja-magazyn.jpg            galeria „Realizacje"
 
---------------------------------------------------------------------
- 1. PRZYGOTUJ ZDJĘCIA
---------------------------------------------------------------------
-Zalecane:
-  • Format:        JPG (zdjęcia) lub WEBP (mniejszy rozmiar, nowoczesny)
-  • Wymiary:       ok. 1200 x 950 px (proporcje zbliżone do 4:3)
-  • Waga pliku:    poniżej 300 KB na zdjęcie (skompresuj przed wgraniem,
-                   np. na squoosh.app albo tinypng.com)
-  • Tło:           najlepiej jasne, jednolite lub plac/budowa —
-                   maszyna wyraźnie na pierwszym planie
-  • Kadr:          cała maszyna w kadrze, podobne ujęcie dla każdego typu
-                   (spójność = bardziej profesjonalny efekt)
+JAK PODMIENIĆ ZDJĘCIE
+---------------------
+1. Przygotuj nowe zdjęcie.
+2. Nazwij je DOKŁADNIE tak samo jak plik, który podmieniasz
+   (np. ladowarka-obrotowa.jpg).
+3. Wgraj je do tego folderu, nadpisując stary plik.
+To wszystko — strona sama je pokaże, nie trzeba nic zmieniać w kodzie.
 
-Proponowane nazwy plików (małe litery, bez spacji i polskich znaków):
-  podest-nozycowy.jpg            — podest nożycowy
-  podest-przegubowy.jpg          — podest teleskopowo-przegubowy
-  ladowarka-teleskopowa.jpg      — ładowarka teleskopowa klasyczna
-  ladowarka-obrotowa.jpg         — ładowarka teleskopowa obrotowa 360°
+ZALECENIA TECHNICZNE
+--------------------
+- Format:    JPG (zdjęcia) — najlepszy stosunek jakości do wagi.
+- Wymiary:   ok. 1200 x 950 px dla kart; hero.jpg najlepiej szersze, ok. 1600 px.
+- Waga:      najlepiej poniżej 300 KB na plik (szybsze ładowanie strony).
+             Możesz skompresować zdjęcie np. na squoosh.app lub tinypng.com.
+- Kadr:      zdjęcia są wyświetlane „z przycięciem do ramki" (object-fit: cover),
+             więc maszyna powinna być mniej więcej na środku kadru.
+- Prawa:     używaj wyłącznie zdjęć, do których masz prawa (własne lub licencjonowane).
 
-Wgraj te pliki TUTAJ, do folderu assets/photos/.
-
-
---------------------------------------------------------------------
- 2. PODMIEŃ ILUSTRACJE NA ZDJĘCIA W KODZIE
---------------------------------------------------------------------
-W plikach HTML znajdź odwołania do "assets/equipment/...svg"
-i zmień je na "assets/photos/...jpg".
-
-Przykład — BYŁO:
-  <img src="assets/equipment/podest-nozycowy.svg" alt="Podest nożycowy elektryczny">
-
-Ma być:
-  <img src="assets/photos/podest-nozycowy.jpg" alt="Podest nożycowy elektryczny">
-
-(Sam tekst alt="..." zostaw — opisuje maszynę dla Google i osób
-niewidomych. Atrybuty width/height/loading też możesz zostawić.)
-
-
---------------------------------------------------------------------
- 3. GDZIE DOKŁADNIE SĄ TE ODWOŁANIA (pełna lista)
---------------------------------------------------------------------
-Możesz podmieniać pojedynczo lub wszystkie naraz.
-
-index.html
-  • hero (duża grafika na górze)          — podest-przegubowy.svg
-  • sekcja "split" (2 kafle usług)        — podest-nozycowy.svg,
-                                            ladowarka-obrotowa.svg
-  • katalog "Nasz sprzęt" (6 kart):
-       podest nożycowy elektr.            — podest-nozycowy.svg
-       podest nożycowy diesel             — podest-nozycowy.svg
-       podest przegubowy elektr.          — podest-przegubowy.svg
-       podest przegubowy diesel           — podest-przegubowy.svg
-       ładowarka teleskopowa              — ladowarka-teleskopowa.svg
-       ładowarka obrotowa 360°            — ladowarka-obrotowa.svg
-
-podesty-ruchome.html  (4 sekcje produktowe)
-       podest nożycowy elektr. / diesel   — podest-nozycowy.svg (x2)
-       podest przegubowy elektr. / diesel — podest-przegubowy.svg (x2)
-
-ladowarki-teleskopowe.html  (2 sekcje produktowe)
-       ładowarka klasyczna                — ladowarka-teleskopowa.svg
-       ładowarka obrotowa 360°            — ladowarka-obrotowa.svg
-
-WSKAZÓWKA: w wielu edytorach (np. VS Code) możesz użyć funkcji
-"Zamień we wszystkich plikach" (Ctrl+Shift+H) i podmienić np.
-   assets/equipment/podest-nozycowy.svg
-na assets/photos/podest-nozycowy.jpg
-jednym kliknięciem we wszystkich stronach.
-
-
---------------------------------------------------------------------
- 4. MOŻESZ MIESZAĆ
---------------------------------------------------------------------
-Nie musisz mieć od razu wszystkich zdjęć. Możesz np. wstawić realne
-zdjęcia podestów, a ładowarki zostawić jako ilustracje SVG — strona
-nadal będzie wyglądać spójnie. Podmieniaj stopniowo.
-
-W razie wątpliwości zachowaj kopię oryginalnych plików SVG
-(folder assets/equipment/ zostaje — nic z niego nie usuwaj).
-====================================================================
+DODANIE ZUPEŁNIE NOWEJ NAZWY PLIKU
+----------------------------------
+Jeśli chcesz dodać zdjęcie pod inną nazwą, trzeba też wskazać je w index.html
+— znajdź odpowiednią kartę (np. <img src="assets/photos/...">) i wpisz nazwę
+nowego pliku. W razie potrzeby chętnie pomożemy.

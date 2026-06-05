@@ -1,11 +1,14 @@
 # 4Rent — strona internetowa
 
-Statyczna, industrialna strona firmy **4Rent Wypożyczalnia Maszyn Budowlanych sp. z o.o.**
+Industrialna strona-wizytówka firmy **4Rent Wypożyczalnia Maszyn Budowlanych sp. z o.o.**
 (wynajem podestów ruchomych i ładowarek teleskopowych — Śląsk).
 
+Całość to **jedna strona** (`index.html`) z płynnym przewijaniem do sekcji:
+Oferta → Realizacje → Atuty → Obszar → O nas → Kontakt.
+
 Zbudowana w czystym HTML + CSS + odrobinie JavaScriptu. Bez frameworków,
-bez procesu budowania (build), bez zależności do instalowania. Pliki wgrywasz
-i działa — idealne pod **GitHub Pages**.
+bez procesu budowania, bez zależności do instalowania. Wgrywasz pliki — działa.
+Idealne pod **GitHub Pages**.
 
 ---
 
@@ -13,127 +16,98 @@ i działa — idealne pod **GitHub Pages**.
 
 ```
 4rent-website/
-├── index.html                  ← strona główna
-├── podesty-ruchome.html        ← oferta: podesty ruchome
-├── ladowarki-teleskopowe.html  ← oferta: ładowarki teleskopowe
-├── kontakt.html                ← kontakt + formularz zapytania
+├── index.html              ← CAŁA strona (wszystkie sekcje na jednej stronie)
 ├── css/
-│   └── styles.css              ← cały wygląd strony (kolory, układ, fonty)
+│   └── styles.css          ← cały wygląd (kolory, układ, fonty, animacje)
 ├── js/
-│   └── main.js                 ← menu mobilne, animacje, drobna interaktywność
+│   └── main.js             ← menu mobilne, podświetlanie nawigacji, animacje
 └── assets/
-    ├── favicon.svg             ← ikonka strony (w karcie przeglądarki)
-    ├── equipment/              ← autorskie ilustracje maszyn (SVG)
-    │   ├── podest-nozycowy.svg
-    │   ├── podest-przegubowy.svg
-    │   ├── ladowarka-teleskopowa.svg
-    │   └── ladowarka-obrotowa.svg
-    └── photos/                 ← tu wgrasz prawdziwe zdjęcia (instrukcja w środku)
+    ├── logo-4r.svg         ← logo (emblemat 4R) jako czysty wektor
+    ├── favicon.svg         ← ikonka strony (w karcie przeglądarki)
+    └── photos/             ← zdjęcia maszyn (już dodane — instrukcja podmiany w środku)
+        ├── hero.jpg
+        ├── podest-nozycowy.jpg
+        ├── podest-nozycowy-diesel.jpg
+        ├── podest-przegubowy.jpg
+        ├── podest-przegubowy-elektryczny.jpg
+        ├── ladowarka-teleskopowa.jpg
+        ├── ladowarka-obrotowa.jpg
+        ├── realizacja-magazyn.jpg
         └── README.txt
 ```
 
 ---
 
-## Jak uruchomić lokalnie (podgląd na własnym komputerze)
+## Podgląd na własnym komputerze
 
-Najprościej: kliknij dwukrotnie `index.html` — otworzy się w przeglądarce.
-
-Wszystkie podstrony i style zadziałają. (Formularz kontaktowy otwiera
-program pocztowy — patrz sekcja „Formularz" niżej.)
+Kliknij dwukrotnie `index.html` — otworzy się w przeglądarce i zadziała w całości.
+(Formularz kontaktowy otwiera program pocztowy — patrz sekcja „Formularz" niżej.)
 
 ---
 
-## Jak wrzucić na GitHub Pages (publikacja w internecie)
+## Publikacja na GitHub Pages
 
 1. Załóż repozytorium na GitHub (np. `4rent-website`).
-2. Wgraj do niego **całą zawartość tego folderu** (pliki `index.html`,
-   `css/`, `js/`, `assets/` itd. mają leżeć w głównym katalogu repo —
-   NIE w podfolderze).
-3. W repozytorium wejdź w **Settings → Pages**.
-4. W sekcji „Build and deployment" → „Source" wybierz **Deploy from a branch**.
-5. Branch: wybierz `main` (lub `master`), folder: `/ (root)`. Kliknij **Save**.
-6. Poczekaj ~1 minutę. Na górze strony Pages pojawi się adres, np.
-   `https://twoja-nazwa.github.io/4rent-website/` — to Twoja strona online.
+2. Wgraj **całą zawartość tego folderu** (pliki `index.html`, `css/`, `js/`,
+   `assets/`) do głównego katalogu repozytorium — nie do podfolderu.
+3. W repo: **Settings → Pages**.
+4. W „Build and deployment" → **Source: Deploy from a branch**.
+5. Wybierz gałąź **main** i folder **/ (root)**, kliknij **Save**.
+6. Po chwili strona będzie pod adresem `https://twoja-nazwa.github.io/4rent-website/`.
 
-### Własna domena (np. www.4-rent.com.pl)
-W **Settings → Pages → Custom domain** wpisz swoją domenę i zapisz.
-Następnie u operatora domeny ustaw rekordy DNS zgodnie z instrukcją
-GitHuba (CNAME na `twoja-nazwa.github.io` lub rekordy A na adresy GitHub Pages).
-Zaznacz też „Enforce HTTPS".
+### Własna domena (4-rent.com.pl)
 
----
-
-## Jak edytować treści
-
-Treść jest wpisana wprost w plikach `.html` — otwórz dowolny w edytorze
-(np. darmowy **VS Code** lub nawet Notatnik) i zmień tekst między znacznikami.
-Przykład:
-
-```html
-<h2 class="h-lg">Nasz sprzęt</h2>     ←  zmień tekst tutaj
-```
-
-**Telefon i e-mail** powtarzają się w kilku miejscach (nagłówek, stopka,
-sekcje kontaktowe). Jeśli będziesz je zmieniać, podmień wszędzie:
-- telefon w linkach: `tel:+48509238087` oraz wyświetlany `509 238 087`
-- e-mail w linkach: `mailto:biuro@4-rent.com.pl` oraz wyświetlany `biuro@4-rent.com.pl`
-
-Najszybciej: w VS Code użyj „Zamień we wszystkich plikach" (Ctrl+Shift+H).
+1. W **Settings → Pages → Custom domain** wpisz `www.4-rent.com.pl` i zapisz
+   (GitHub doda do repo plik `CNAME`).
+2. U operatora domeny ustaw rekordy DNS:
+   - **CNAME** dla `www` → `twoja-nazwa.github.io`
+   - dla domeny głównej (bez `www`) cztery rekordy **A** na adresy GitHub Pages:
+     `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+3. Wróć do **Settings → Pages** i zaznacz **Enforce HTTPS** (po propagacji DNS).
 
 ---
 
-## Jak zmienić kolory i fonty
+## Edycja treści
 
-Cała kolorystyka jest sterowana z jednego miejsca — góra pliku
-`css/styles.css`, sekcja `:root`. Zmieniasz wartość w jednym miejscu,
-a kolor aktualizuje się na całej stronie. Najważniejsze:
+Wszystko jest w `index.html`, posekcjonowane czytelnymi komentarzami
+(`<!-- ===== OFERTA ===== -->` itd.). Otwórz plik w dowolnym edytorze tekstu
+i zmień to, co chcesz — opisy maszyn, parametry, listę miast, dane kontaktowe.
+
+- **Telefon / e-mail** zmieniasz w trzech miejscach: górny pasek, sekcja Kontakt,
+  stopka. Szukaj `509238087` oraz `biuro@4-rent.com.pl`.
+- **Parametry sprzętu** to wiersze `specs__row` w kartach oferty.
+- **Miasta** to lista `city` w sekcji „Obszar".
+
+## Zmiana kolorów
+
+Kolory są zdefiniowane raz, na górze `css/styles.css`, w sekcji `:root`.
+Najważniejsze:
 
 ```css
-:root {
-  --navy:   #152F4F;   /* główny granat marki      */
-  --steel:  #52748F;   /* stalowy niebieski         */
-  --amber:  #f5a623;   /* akcent (przyciski, detale) */
-  --concrete: #f1f0ec; /* jasne tło sekcji          */
-  ...
-  --font-display: "Saira Condensed", ...;  /* nagłówki         */
-  --font-body:    "Hanken Grotesk", ...;   /* tekst            */
-  --font-mono:    "JetBrains Mono", ...;   /* dane techniczne  */
-}
+--navy:   #152F4F;   /* granat — kolor marki, tła sekcji */
+--steel:  #52748F;   /* stal — kolor marki, detale */
+--accent: #2E90E5;   /* azure — akcent (przyciski, podkreślenia, kropki) */
 ```
 
-Fonty pobierane są z Google Fonts — odnośnik (`<link ... fonts.googleapis>`)
-znajdziesz w sekcji `<head>` każdej strony. Jeśli zmienisz font na inny
-z Google Fonts, podmień zarówno ten odnośnik, jak i nazwę w `--font-...`.
+Zmieniasz wartość w jednym miejscu — zmienia się w całej stronie.
 
----
+## Zdjęcia
 
-## Zdjęcia maszyn
+Prawdziwe zdjęcia maszyn są już wgrane w `assets/photos/`. Żeby podmienić
+któreś na lepsze (np. zdjęcia własnego sprzętu), podłóż plik o tej samej nazwie.
+Szczegóły (zalecane wymiary, waga) w pliku `assets/photos/README.txt`.
 
-Strona ma gotowe, spójne **ilustracje techniczne** maszyn (folder
-`assets/equipment/`). Działają od razu. Gdy będziesz mieć prawdziwe
-zdjęcia sprzętu — pełna instrukcja podmiany jest w pliku
-**`assets/photos/README.txt`**.
+## Fonty
 
----
+Strona używa fontów Google (Saira Condensed, Hanken Grotesk, JetBrains Mono),
+ładowanych automatycznie z internetu — nic nie trzeba instalować.
 
 ## Formularz kontaktowy
 
-GitHub Pages serwuje wyłącznie pliki statyczne (nie ma serwera/PHP),
-dlatego formularz na stronie `kontakt.html` działa przez **mailto**:
-po wypełnieniu i kliknięciu „Wyślij zapytanie" otwiera się domyślny
-program pocztowy z gotową, uzupełnioną wiadomością do `biuro@4-rent.com.pl`,
-którą klient już tylko wysyła. Pod formularzem jest też telefon jako
-szybsza alternatywa.
+Formularz w sekcji Kontakt działa przez **mailto**: po wysłaniu otwiera program
+pocztowy klienta z gotową, uzupełnioną wiadomością do `biuro@4-rent.com.pl`.
+Nie wymaga serwera ani backendu — działa na GitHub Pages od razu.
 
-Jeśli w przyszłości chcesz, by formularz wysyłał się „sam" w tle (bez
-otwierania poczty) i zbierał zgłoszenia, można podpiąć darmową usługę
-typu **Formspree** lub **Getform** — wystarczy wtedy drobna zmiana w
-`kontakt.html`. Daj znać, jeśli będzie potrzebne.
-
----
-
-## Dane firmy (dla porządku)
-
-- 4Rent Wypożyczalnia Maszyn Budowlanych sp. z o.o.
-- NIP: 6472595920 · KRS: 0000934178 · REGON: 520513790
-- tel. 509 238 087 · biuro@4-rent.com.pl
+Jeśli wolisz, żeby zgłoszenia przychodziły bez otwierania poczty (klasyczny
+formularz wysyłany w tle), można go podłączyć pod darmową usługę typu
+**Formspree** lub **Getform** — wystarczy podmienić obsługę wysyłki. Daj znać.

@@ -4,482 +4,546 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>4Rent — Wynajem podestów ruchomych i ładowarek teleskopowych | Śląsk</title>
-<meta name="description" content="4Rent — wynajem podestów ruchomych i ładowarek teleskopowych na terenie Katowic, Gliwic, Chorzowa i całego Śląska. Sprawdzony sprzęt, szybkie terminy. Dla firm i klientów indywidualnych. Tel. 509 238 087.">
-<meta property="og:title" content="4Rent — Wynajem maszyn budowlanych | Śląsk">
-<meta property="og:description" content="Podesty ruchome i ładowarki teleskopowe na terenie całego Śląska. Sprawdzony sprzęt, szybkie terminy.">
+<meta name="description" content="4Rent — wynajem podestów ruchomych (nożycowych i przegubowych) oraz ładowarek teleskopowych na terenie Katowic, Gliwic, Chorzowa i całego Śląska. Sprawdzony sprzęt, szybkie terminy, dla firm i klientów indywidualnych.">
+<meta name="theme-color" content="#0E2138">
 <meta property="og:type" content="website">
-<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<meta property="og:title" content="4Rent — Wynajem podestów ruchomych i ładowarek teleskopowych | Śląsk">
+<meta property="og:description" content="Sprawdzony sprzęt do prac budowlanych, montażowych i serwisowych na terenie całego Śląska.">
+<meta property="og:locale" content="pl_PL">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&family=Saira+Condensed:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<a class="skip-link" href="#main">Przejdź do treści</a>
 
-<!-- ====================== PASEK UŻYTKOWY ====================== -->
+<a class="skip-link" href="#oferta">Przejdź do treści</a>
+
+<!-- ====================== TOPBAR ====================== -->
 <div class="topbar">
-  <div class="container">
-    <div class="topbar__inner">
-      <div class="topbar__contact">
-        <a href="tel:+48509238087">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg>
-          509 238 087
-        </a>
-        <a href="mailto:biuro@4-rent.com.pl">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-          biuro@4-rent.com.pl
-        </a>
-      </div>
+  <div class="container topbar__inner">
+    <div class="topbar__group">
+      <a href="tel:+48509238087" aria-label="Zadzwoń">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+        509 238 087
+      </a>
+      <a href="mailto:biuro@4-rent.com.pl" aria-label="Napisz e-mail">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 6 9 7 9-7"/></svg>
+        biuro@4-rent.com.pl
+      </a>
+    </div>
+    <div class="topbar__group">
       <span class="topbar__tag">Wynajem maszyn budowlanych — Śląsk</span>
     </div>
   </div>
 </div>
 
-<!-- ====================== NAGŁÓWEK ====================== -->
+<!-- ====================== HEADER ====================== -->
 <header class="site-header">
-  <div class="container">
-    <nav class="nav" aria-label="Nawigacja główna">
-      <a class="logo" href="index.html" aria-label="4Rent — strona główna">
-        <svg class="logo__mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
-          <rect x="9" y="10" width="30" height="3.6" rx="1.2" fill="currentColor"/>
-          <path d="M13 10 V5.5 H35 V10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
-          <g stroke="currentColor" stroke-width="2.6" stroke-linecap="round">
-            <path d="M16 16 L32 33"/><path d="M32 16 L16 33"/>
-            <path d="M16 24.5 L32 33"/><path d="M32 24.5 L16 33"/>
-          </g>
-          <rect x="12" y="35" width="24" height="3.6" rx="1.2" fill="currentColor" opacity="0.55"/>
-          <circle cx="17.5" cy="42" r="2.4" fill="currentColor"/>
-          <circle cx="30.5" cy="42" r="2.4" fill="currentColor"/>
-        </svg>
-        <span class="logo__text">
-          <span class="logo__name"><b>4</b>RENT</span>
-          <span class="logo__sub">Wynajem maszyn budowlanych</span>
-        </span>
+  <nav class="container nav" aria-label="Główna nawigacja">
+    <a href="#top" class="logo" aria-label="4Rent — strona główna">
+      <svg class="logo__mark" viewBox="0 0 96 96" aria-hidden="true">
+        <g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" opacity=".9">
+          <line x1="21" y1="29" x2="75" y2="29"/><line x1="21" y1="29" x2="21" y2="47"/><line x1="75" y1="29" x2="75" y2="47"/>
+        </g>
+        <text x="48" y="46" text-anchor="middle" font-family="'Saira Condensed','Arial Narrow',sans-serif" font-weight="800" font-size="23" fill="currentColor">4R</text>
+        <rect x="17" y="47" width="62" height="7" rx="2" fill="currentColor"/>
+        <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" opacity=".6">
+          <line x1="30" y1="55" x2="66" y2="68"/><line x1="66" y1="55" x2="30" y2="68"/><line x1="30" y1="63" x2="66" y2="76"/><line x1="66" y1="63" x2="30" y2="76"/>
+        </g>
+        <g fill="#2E90E5"><circle cx="48" cy="61.5" r="2.1"/><circle cx="48" cy="69.5" r="2.1"/></g>
+        <rect x="24" y="75" width="48" height="7" rx="2" fill="currentColor"/>
+        <g fill="currentColor"><circle cx="34" cy="86" r="7"/><circle cx="62" cy="86" r="7"/></g>
+      </svg>
+      <span class="logo__text">
+        <span class="logo__name"><b>4</b>RENT</span>
+        <span class="logo__sub">Wypożyczalnia maszyn · Śląsk</span>
+      </span>
+    </a>
+
+    <div class="nav__menu" id="nav-menu">
+      <div class="nav__links">
+        <a href="#oferta">Oferta</a>
+        <a href="#realizacje">Realizacje</a>
+        <a href="#obszar">Obszar</a>
+        <a href="#o-nas">O nas</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+      <a href="tel:+48509238087" class="btn btn--accent nav__cta">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+        Zadzwoń
       </a>
+    </div>
 
-      <div class="nav__menu" id="navMenu">
-        <ul class="nav__links">
-          <li><a href="index.html" aria-current="page">Start</a></li>
-          <li><a href="podesty-ruchome.html">Podesty ruchome</a></li>
-          <li><a href="ladowarki-teleskopowe.html">Ładowarki teleskopowe</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-        <div class="nav__cta">
-          <a class="btn btn--amber" href="tel:+48509238087">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg>
-            Zadzwoń
-          </a>
-        </div>
-      </div>
-
-      <div class="nav__cta">
-        <a class="btn btn--amber" href="kontakt.html">Zapytaj o wynajem</a>
-        <button class="nav__toggle" type="button" aria-label="Otwórz menu" aria-expanded="false" aria-controls="navMenu"><span></span></button>
-      </div>
-    </nav>
-  </div>
+    <a href="tel:+48509238087" class="btn btn--accent nav__cta">Zadzwoń</a>
+    <button class="nav__toggle" aria-label="Menu" aria-controls="nav-menu" aria-expanded="false"><span></span></button>
+  </nav>
 </header>
-<div class="nav-backdrop" aria-hidden="true"></div>
+<div class="nav-backdrop" hidden></div>
 
-<main id="main">
+<main id="top">
 
   <!-- ====================== HERO ====================== -->
   <section class="hero">
-    <div class="hero__glow" aria-hidden="true"></div>
-    <div class="container">
-      <div class="hero__inner">
-        <div class="hero__copy">
-          <span class="kicker kicker--light">Wynajem maszyn budowlanych</span>
-          <h1 class="h-xl">Podesty ruchome <span class="accent">i ładowarki teleskopowe</span></h1>
-          <span class="hero__region">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
-            Śląsk · <b>Katowice · Gliwice · Chorzów</b>
-          </span>
-          <p class="lead">Wynajmiemy Ci sprawdzony sprzęt do prac na wysokości oraz przeładunkowych — szybko i na terenie całego Śląska. Dla firm budowlanych, ekip montażowych, serwisów i klientów indywidualnych.</p>
-          <div class="hero__actions">
-            <a class="btn btn--amber btn--lg" href="kontakt.html">
-              Zapytaj o wynajem
-              <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
-            <a class="btn btn--ghost-light btn--lg" href="#sprzet">Zobacz sprzęt</a>
-          </div>
-        </div>
+    <div class="hero__media">
+      <img src="assets/photos/hero.jpg" alt="Ładowarka teleskopowa JCB podczas pracy">
+    </div>
+    <div class="hero__grid" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <span class="kicker hero__eyebrow">Maszyny budowlane · Śląsk</span>
+      <h1 class="h-xl">Wynajem podestów ruchomych<em>i ładowarek teleskopowych</em></h1>
+      <p class="lead hero__lead">Sprawdzony sprzęt do prac budowlanych, montażowych i serwisowych — na terenie Katowic, Gliwic, Chorzowa i całego Śląska. Dla firm i klientów indywidualnych.</p>
+      <div class="hero__actions">
+        <a href="#oferta" class="btn btn--accent btn--lg">Zobacz ofertę
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+        </a>
+        <a href="tel:+48509238087" class="btn btn--ghost-light btn--lg">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          509 238 087
+        </a>
+      </div>
 
-        <div class="hero__visual">
-          <div class="hero__visual-frame">
-            <span class="hero__corner hero__corner--tl">4RENT · SPEC</span>
-            <span class="hero__corner hero__corner--br">↕ do 26 m</span>
-            <div class="hero__machine">
-              <img src="assets/equipment/podest-przegubowy.svg" alt="Podest teleskopowo-przegubowy 4Rent" width="480" height="380" loading="eager">
-            </div>
-          </div>
-        </div>
+      <div class="hero-stats">
+        <div class="stat"><div class="stat__num">do <b>26</b> m</div><div class="stat__label">Maks. wysokość robocza</div></div>
+        <div class="stat"><div class="stat__num"><b>360°</b></div><div class="stat__label">Ładowarka obrotowa</div></div>
+        <div class="stat"><div class="stat__num"><b>6</b></div><div class="stat__label">Typów maszyn</div></div>
+        <div class="stat"><div class="stat__num">Śląsk</div><div class="stat__label">Obszar dostaw</div></div>
       </div>
     </div>
+  </section>
 
-    <!-- Pasek statystyk -->
-    <div class="hero-stats blueprint">
-      <div class="container">
-        <div class="hero-stats__grid">
-          <div class="stat">
-            <div class="stat__num">do <span>26</span> m</div>
-            <div class="stat__label">Maksymalny zasięg pionowy</div>
+  <!-- ====================== PASEK ZAUFANIA ====================== -->
+  <section class="trust">
+    <div class="container trust__inner">
+      <div class="trust__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 11 2 2 4-4"/></svg>
+        <span>Sprawdzony,<br>serwisowany sprzęt</span>
+      </div>
+      <div class="trust__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <span>Szybkie terminy<br>realizacji</span>
+      </div>
+      <div class="trust__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9"/><path d="M16 3.1a4 4 0 0 1 0 7.8"/></svg>
+        <span>Firmy i klienci<br>indywidualni</span>
+      </div>
+      <div class="trust__item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2-2 2.6-2.6z"/></svg>
+        <span>Fachowe<br>doradztwo</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== OFERTA ====================== -->
+  <section id="oferta" class="section bg-paper blueprint">
+    <div class="container">
+      <div class="sec-head sec-head--split reveal">
+        <div>
+          <span class="kicker">Nasz sprzęt</span>
+          <h2 class="h-lg">Oferta wynajmu</h2>
+        </div>
+        <p class="lead">Podesty ruchome o wysokości roboczej do 26 m oraz ładowarki teleskopowe — w tym model obrotowy 360°. Dobierzemy maszynę do zadania, podłoża i miejsca pracy.</p>
+      </div>
+
+      <!-- Kategoria 01 — PODESTY RUCHOME -->
+      <div class="cat reveal">
+        <div class="cat__head">
+          <div class="cat__title">
+            <span class="cat__index">01</span>
+            <h3 class="h-md">Podesty ruchome</h3>
           </div>
-          <div class="stat">
-            <div class="stat__num"><span>6</span></div>
-            <div class="stat__label">Typów podestów i ładowarek</div>
+          <span class="cat__count">4 typy · nożycowe i przegubowe</span>
+        </div>
+
+        <div class="equip-grid equip-grid--two">
+          <!-- 1 -->
+          <article class="equip-card reveal" data-delay="1">
+            <div class="equip-card__media">
+              <span class="equip-card__badge badge--diesel"><span class="badge__dot"></span>Diesel</span>
+              <span class="equip-card__index">01</span>
+              <img src="assets/photos/podest-przegubowy.jpg" alt="Podest teleskopowo-przegubowy — kosz roboczy" loading="lazy">
+            </div>
+            <div class="equip-card__body">
+              <div class="equip-card__type">Teleskopowo-przegubowy</div>
+              <h4 class="equip-card__name">Podest przegubowy — diesel</h4>
+              <p class="equip-card__desc">Duży zasięg w pionie i poziomie. Idealny do prac na otwartym terenie i przy elewacjach.</p>
+              <div class="specs">
+                <div class="specs__row"><span class="specs__key">Wysokość robocza</span><span class="specs__val"><em>16–26 m</em></span></div>
+                <div class="specs__row"><span class="specs__key">Napęd</span><span class="specs__val">Diesel</span></div>
+                <div class="specs__row"><span class="specs__key">Zastosowanie</span><span class="specs__val">Teren otwarty</span></div>
+              </div>
+              <div class="equip-card__foot">
+                <a href="#kontakt" class="link-arrow">Zapytaj o dostępność
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+          <!-- 2 -->
+          <article class="equip-card reveal" data-delay="2">
+            <div class="equip-card__media">
+              <span class="equip-card__badge badge--electric"><span class="badge__dot"></span>Elektryczny</span>
+              <span class="equip-card__index">02</span>
+              <img src="assets/photos/podest-przegubowy-elektryczny.jpg" alt="Podest przegubowy elektryczny na placu" loading="lazy">
+            </div>
+            <div class="equip-card__body">
+              <div class="equip-card__type">Teleskopowo-przegubowy</div>
+              <h4 class="equip-card__name">Podest przegubowy — elektryczny</h4>
+              <p class="equip-card__desc">Cicha, bezemisyjna praca w halach i wewnątrz obiektów, z możliwością ominięcia przeszkód.</p>
+              <div class="specs">
+                <div class="specs__row"><span class="specs__key">Wysokość robocza</span><span class="specs__val"><em>11,9–15 m</em></span></div>
+                <div class="specs__row"><span class="specs__key">Napęd</span><span class="specs__val">Elektryczny</span></div>
+                <div class="specs__row"><span class="specs__key">Zastosowanie</span><span class="specs__val">Hale, wnętrza</span></div>
+              </div>
+              <div class="equip-card__foot">
+                <a href="#kontakt" class="link-arrow">Zapytaj o dostępność
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+          <!-- 3 -->
+          <article class="equip-card reveal" data-delay="1">
+            <div class="equip-card__media">
+              <span class="equip-card__badge badge--electric"><span class="badge__dot"></span>Elektryczny</span>
+              <span class="equip-card__index">03</span>
+              <img src="assets/photos/podest-nozycowy.jpg" alt="Podest nożycowy elektryczny" loading="lazy">
+            </div>
+            <div class="equip-card__body">
+              <div class="equip-card__type">Nożycowy</div>
+              <h4 class="equip-card__name">Podest nożycowy — elektryczny</h4>
+              <p class="equip-card__desc">Stabilna, duża platforma robocza do prac pionowych w halach i magazynach.</p>
+              <div class="specs">
+                <div class="specs__row"><span class="specs__key">Wysokość robocza</span><span class="specs__val"><em>8–14 m</em></span></div>
+                <div class="specs__row"><span class="specs__key">Napęd</span><span class="specs__val">Elektryczny</span></div>
+                <div class="specs__row"><span class="specs__key">Zastosowanie</span><span class="specs__val">Hale, wnętrza</span></div>
+              </div>
+              <div class="equip-card__foot">
+                <a href="#kontakt" class="link-arrow">Zapytaj o dostępność
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+          <!-- 4 -->
+          <article class="equip-card reveal" data-delay="2">
+            <div class="equip-card__media">
+              <span class="equip-card__badge badge--diesel"><span class="badge__dot"></span>Diesel</span>
+              <span class="equip-card__index">04</span>
+              <img src="assets/photos/podest-nozycowy-diesel.jpg" alt="Podest nożycowy diesel" loading="lazy">
+            </div>
+            <div class="equip-card__body">
+              <div class="equip-card__type">Nożycowy</div>
+              <h4 class="equip-card__name">Podest nożycowy — diesel</h4>
+              <p class="equip-card__desc">Mocna jednostka terenowa do prac na zewnątrz, na nieutwardzonym podłożu.</p>
+              <div class="specs">
+                <div class="specs__row"><span class="specs__key">Wysokość robocza</span><span class="specs__val"><em>12–18 m</em></span></div>
+                <div class="specs__row"><span class="specs__key">Napęd</span><span class="specs__val">Diesel</span></div>
+                <div class="specs__row"><span class="specs__key">Zastosowanie</span><span class="specs__val">Teren otwarty</span></div>
+              </div>
+              <div class="equip-card__foot">
+                <a href="#kontakt" class="link-arrow">Zapytaj o dostępność
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Kategoria 02 — ŁADOWARKI TELESKOPOWE -->
+      <div class="cat reveal">
+        <div class="cat__head">
+          <div class="cat__title">
+            <span class="cat__index">02</span>
+            <h3 class="h-md">Ładowarki teleskopowe</h3>
           </div>
-          <div class="stat">
-            <div class="stat__num"><span>18</span></div>
-            <div class="stat__label">Obsługiwanych miast</div>
-          </div>
-          <div class="stat">
-            <div class="stat__num"><span>360</span>°</div>
-            <div class="stat__label">Ładowarka obrotowa</div>
-          </div>
+          <span class="cat__count">2 typy · klasyczna i obrotowa</span>
+        </div>
+
+        <div class="equip-grid equip-grid--two">
+          <!-- 1 -->
+          <article class="equip-card reveal" data-delay="1">
+            <div class="equip-card__media">
+              <span class="equip-card__badge badge--diesel"><span class="badge__dot"></span>Ładowarka</span>
+              <span class="equip-card__index">05</span>
+              <img src="assets/photos/ladowarka-teleskopowa.jpg" alt="Ładowarka teleskopowa JCB" loading="lazy">
+            </div>
+            <div class="equip-card__body">
+              <div class="equip-card__type">Teleskopowa</div>
+              <h4 class="equip-card__name">Ładowarka teleskopowa</h4>
+              <p class="equip-card__desc">Uniwersalna maszyna do podnoszenia, transportu i podawania materiałów na budowie.</p>
+              <div class="specs">
+                <div class="specs__row"><span class="specs__key">Udźwig</span><span class="specs__val"><em>na zapytanie</em></span></div>
+                <div class="specs__row"><span class="specs__key">Wysięg</span><span class="specs__val"><em>na zapytanie</em></span></div>
+                <div class="specs__row"><span class="specs__key">Typ</span><span class="specs__val">Klasyczna</span></div>
+              </div>
+              <div class="equip-card__foot">
+                <a href="tel:+48509238087" class="link-arrow">Zadzwoń po parametry
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+          <!-- 2 -->
+          <article class="equip-card reveal" data-delay="2">
+            <div class="equip-card__media">
+              <span class="equip-card__badge badge--electric"><span class="badge__dot"></span>Obrót 360°</span>
+              <span class="equip-card__index">06</span>
+              <img src="assets/photos/ladowarka-obrotowa.jpg" alt="Ładowarka teleskopowa obrotowa Manitou 360 stopni" loading="lazy">
+            </div>
+            <div class="equip-card__body">
+              <div class="equip-card__type">Teleskopowa obrotowa</div>
+              <h4 class="equip-card__name">Ładowarka obrotowa 360°</h4>
+              <p class="equip-card__desc">Pełny obrót wieży o 360° — praca z jednego miejsca, bez przestawiania maszyny.</p>
+              <div class="specs">
+                <div class="specs__row"><span class="specs__key">Obrót</span><span class="specs__val"><em>360°</em></span></div>
+                <div class="specs__row"><span class="specs__key">Udźwig / wysięg</span><span class="specs__val">na zapytanie</span></div>
+                <div class="specs__row"><span class="specs__key">Typ</span><span class="specs__val">Obrotowa</span></div>
+              </div>
+              <div class="equip-card__foot">
+                <a href="tel:+48509238087" class="link-arrow">Zadzwoń po parametry
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ====================== PODZIAŁ NA 2 USŁUGI ====================== -->
-  <section class="section--tight" aria-label="Nasze usługi">
-    <div class="split">
-      <a class="split__panel split__panel--a" href="podesty-ruchome.html">
-        <img class="split__art" src="assets/equipment/podest-nozycowy.svg" alt="" aria-hidden="true">
-        <span class="split__num">01 — Praca na wysokości</span>
-        <h3 class="h-md">Podesty ruchome</h3>
-        <p>Podesty nożycowe i teleskopowo-przegubowe, elektryczne i z napędem diesel. Zasięg roboczy od 8 do 26 metrów.</p>
-        <span class="link-arrow link-arrow--light">
-          Zobacz podesty
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </span>
-      </a>
-
-      <a class="split__panel split__panel--b" href="ladowarki-teleskopowe.html">
-        <img class="split__art" src="assets/equipment/ladowarka-obrotowa.svg" alt="" aria-hidden="true">
-        <span class="split__num">02 — Transport i przeładunek</span>
-        <h3 class="h-md">Ładowarki teleskopowe</h3>
-        <p>Ładowarki teleskopowe klasyczne oraz obrotowe (360°) do podnoszenia i przemieszczania materiałów na placu budowy.</p>
-        <span class="link-arrow link-arrow--light">
-          Zobacz ładowarki
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </span>
-      </a>
-    </div>
-  </section>
-
-  <!-- ====================== KATALOG SPRZĘTU ====================== -->
-  <section class="section bg-concrete" id="sprzet">
+  <!-- ====================== REALIZACJE ====================== -->
+  <section id="realizacje" class="section bg-concrete">
     <div class="container">
-      <div class="section-head reveal">
-        <span class="kicker">Nasz sprzęt</span>
-        <h2 class="h-lg">Maszyny gotowe do pracy</h2>
-        <p>Wybierz sprzęt dopasowany do zadania — od kompaktowych podestów nożowych po wysokie podesty przegubowe i ładowarki teleskopowe. Pełne parametry i dostępne terminy potwierdzimy telefonicznie.</p>
+      <div class="sec-head reveal">
+        <span class="kicker">Realizacje</span>
+        <h2 class="h-lg">Sprzęt w akcji</h2>
+        <p class="lead">Nasze maszyny pracują na budowach, w halach i przy obiektach przemysłowych na całym Śląsku.</p>
       </div>
 
-      <div class="equip-grid">
-
-        <!-- 1. Podest nożycowy elektryczny -->
-        <article class="equip-card reveal">
-          <div class="equip-card__media">
-            <span class="equip-card__badge badge--electric"><span class="badge__dot"></span>Elektryczny</span>
-            <img src="assets/equipment/podest-nozycowy.svg" alt="Podest nożycowy elektryczny">
+      <div class="gallery reveal">
+        <a class="gallery__tile" href="#kontakt">
+          <img src="assets/photos/realizacja-magazyn.jpg" alt="Podest nożycowy w hali magazynowej">
+          <div class="gallery__cap">
+            <span class="num">01 / Montaże i serwis</span>
+            <span class="ttl">Praca na wysokości w halach</span>
+            <span class="sub">Bezpieczny dostęp przy montażach instalacji i serwisie w obiektach.</span>
           </div>
-          <div class="equip-card__body">
-            <span class="equip-card__type">Podest nożycowy</span>
-            <h3>Nożycowy elektryczny</h3>
-            <div class="specs">
-              <div class="specs__row"><span class="specs__key">Zasięg roboczy</span><span class="specs__val">8–14 <small>m</small></span></div>
-              <div class="specs__row"><span class="specs__key">Napęd</span><span class="specs__val">Elektryczny</span></div>
-              <div class="specs__row"><span class="specs__key">Zastosowanie</span><span class="specs__val">Wewnątrz</span></div>
-            </div>
-            <a class="link-arrow" href="podesty-ruchome.html">Szczegóły<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </a>
+        <a class="gallery__tile" href="#kontakt">
+          <img src="assets/photos/podest-nozycowy-diesel.jpg" alt="Podest nożycowy podczas pracy">
+          <div class="gallery__cap">
+            <span class="num">02 / Prace budowlane</span>
+            <span class="ttl">Podesty na budowie</span>
           </div>
-        </article>
-
-        <!-- 2. Podest nożycowy diesel -->
-        <article class="equip-card reveal" data-delay="1">
-          <div class="equip-card__media">
-            <span class="equip-card__badge badge--diesel"><span class="badge__dot"></span>Diesel</span>
-            <img src="assets/equipment/podest-nozycowy.svg" alt="Podest nożycowy z napędem diesel">
+        </a>
+        <a class="gallery__tile" href="#kontakt">
+          <img src="assets/photos/ladowarka-teleskopowa.jpg" alt="Ładowarka teleskopowa przy przeładunku">
+          <div class="gallery__cap">
+            <span class="num">03 / Przeładunek</span>
+            <span class="ttl">Transport materiałów</span>
           </div>
-          <div class="equip-card__body">
-            <span class="equip-card__type">Podest nożycowy</span>
-            <h3>Nożycowy diesel</h3>
-            <div class="specs">
-              <div class="specs__row"><span class="specs__key">Zasięg roboczy</span><span class="specs__val">12–18 <small>m</small></span></div>
-              <div class="specs__row"><span class="specs__key">Napęd</span><span class="specs__val">Diesel</span></div>
-              <div class="specs__row"><span class="specs__key">Zastosowanie</span><span class="specs__val">Teren</span></div>
-            </div>
-            <a class="link-arrow" href="podesty-ruchome.html">Szczegóły<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          </div>
-        </article>
-
-        <!-- 3. Podest przegubowy elektryczny -->
-        <article class="equip-card reveal" data-delay="2">
-          <div class="equip-card__media">
-            <span class="equip-card__badge badge--electric"><span class="badge__dot"></span>Elektryczny</span>
-            <img src="assets/equipment/podest-przegubowy.svg" alt="Podest teleskopowo-przegubowy elektryczny">
-          </div>
-          <div class="equip-card__body">
-            <span class="equip-card__type">Podest przegubowy</span>
-            <h3>Przegubowy elektryczny</h3>
-            <div class="specs">
-              <div class="specs__row"><span class="specs__key">Zasięg roboczy</span><span class="specs__val">11,9–15 <small>m</small></span></div>
-              <div class="specs__row"><span class="specs__key">Napęd</span><span class="specs__val">Elektryczny</span></div>
-              <div class="specs__row"><span class="specs__key">Ramię</span><span class="specs__val">Przegubowe</span></div>
-            </div>
-            <a class="link-arrow" href="podesty-ruchome.html">Szczegóły<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          </div>
-        </article>
-
-        <!-- 4. Podest przegubowy diesel -->
-        <article class="equip-card reveal" data-delay="3">
-          <div class="equip-card__media">
-            <span class="equip-card__badge badge--diesel"><span class="badge__dot"></span>Diesel</span>
-            <img src="assets/equipment/podest-przegubowy.svg" alt="Podest teleskopowo-przegubowy z napędem diesel">
-          </div>
-          <div class="equip-card__body">
-            <span class="equip-card__type">Podest przegubowy</span>
-            <h3>Przegubowy diesel</h3>
-            <div class="specs">
-              <div class="specs__row"><span class="specs__key">Zasięg roboczy</span><span class="specs__val">16–26 <small>m</small></span></div>
-              <div class="specs__row"><span class="specs__key">Napęd</span><span class="specs__val">Diesel</span></div>
-              <div class="specs__row"><span class="specs__key">Ramię</span><span class="specs__val">Teleskop.</span></div>
-            </div>
-            <a class="link-arrow" href="podesty-ruchome.html">Szczegóły<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          </div>
-        </article>
-
-        <!-- 5. Ładowarka teleskopowa -->
-        <article class="equip-card reveal">
-          <div class="equip-card__media">
-            <span class="equip-card__badge badge--diesel"><span class="badge__dot"></span>Diesel</span>
-            <img src="assets/equipment/ladowarka-teleskopowa.svg" alt="Ładowarka teleskopowa">
-          </div>
-          <div class="equip-card__body">
-            <span class="equip-card__type">Ładowarka teleskopowa</span>
-            <h3>Teleskopowa klasyczna</h3>
-            <div class="specs">
-              <div class="specs__row"><span class="specs__key">Typ</span><span class="specs__val">Teleskop.</span></div>
-              <div class="specs__row"><span class="specs__key">Napęd</span><span class="specs__val">Diesel</span></div>
-              <div class="specs__row"><span class="specs__key">Parametry</span><span class="specs__val">Na zapytanie</span></div>
-            </div>
-            <a class="link-arrow" href="ladowarki-teleskopowe.html">Szczegóły<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          </div>
-        </article>
-
-        <!-- 6. Ładowarka teleskopowa obrotowa -->
-        <article class="equip-card reveal" data-delay="1">
-          <div class="equip-card__media">
-            <span class="equip-card__badge badge--diesel"><span class="badge__dot"></span>360° obrót</span>
-            <img src="assets/equipment/ladowarka-obrotowa.svg" alt="Ładowarka teleskopowa obrotowa 360 stopni">
-          </div>
-          <div class="equip-card__body">
-            <span class="equip-card__type">Ładowarka teleskopowa</span>
-            <h3>Teleskopowa obrotowa</h3>
-            <div class="specs">
-              <div class="specs__row"><span class="specs__key">Obrót</span><span class="specs__val">360<small>°</small></span></div>
-              <div class="specs__row"><span class="specs__key">Typ</span><span class="specs__val">Obrotowa</span></div>
-              <div class="specs__row"><span class="specs__key">Parametry</span><span class="specs__val">Na zapytanie</span></div>
-            </div>
-            <a class="link-arrow" href="ladowarki-teleskopowe.html">Szczegóły<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          </div>
-        </article>
-
-      </div>
-
-      <div class="center-btn">
-        <a class="btn btn--outline btn--lg" href="kontakt.html">
-          Potrzebujesz konkretnego modelu? Napisz do nas
-          <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- ====================== ATUTY ====================== -->
-  <section class="section">
+  <!-- ====================== DLACZEGO 4RENT ====================== -->
+  <section id="atuty" class="section bg-navy-deep blueprint grain">
     <div class="container">
-      <div class="section-head section-head--center reveal">
-        <span class="kicker kicker--center">Dlaczego 4Rent</span>
-        <h2 class="h-lg">Wynajem bez niespodzianek</h2>
-        <p>Od początku stawiamy zadowolenie klienta na pierwszym miejscu — to właśnie wysoki standard obsługi stał się bodźcem do rozwoju naszej firmy.</p>
+      <div class="sec-head reveal">
+        <span class="kicker kicker--light">Dlaczego 4Rent</span>
+        <h2 class="h-lg is-light">Wynajem bez kompromisów</h2>
       </div>
-
       <div class="features">
-        <div class="feature reveal">
-          <span class="feature__num">01</span>
-          <div class="feature__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8-7 9-4-1-7-4.5-7-9V6l7-3Z"/><path d="m9 12 2 2 4-4"/></svg>
-          </div>
-          <h3>Sprawdzony sprzęt</h3>
-          <p>Maszyny serwisowane i gotowe do pracy. Otrzymujesz urządzenie sprawne i bezpieczne dla operatora.</p>
-        </div>
-
         <div class="feature reveal" data-delay="1">
-          <span class="feature__num">02</span>
-          <div class="feature__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></svg>
-          </div>
-          <h3>Szybkie terminy</h3>
-          <p>Sprawnie potwierdzamy dostępność i ustalamy dogodny termin wynajmu — bez zbędnego czekania.</p>
+          <span class="feature__num">01</span>
+          <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 11 2 2 4-4"/></svg></div>
+          <h3>Sprawdzony sprzęt</h3>
+          <p>Regularnie serwisowane maszyny renomowanych marek, gotowe do pracy od pierwszej godziny wynajmu.</p>
         </div>
-
         <div class="feature reveal" data-delay="2">
-          <span class="feature__num">03</span>
-          <div class="feature__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 20a5.5 5.5 0 0 1 11 0"/><path d="M16 5.2a3 3 0 0 1 0 5.6M20.5 20a5.2 5.2 0 0 0-3.3-4.8"/></svg>
-          </div>
-          <h3>Firmy i klienci indywidualni</h3>
-          <p>Obsługujemy zarówno duże ekipy budowlane i montażowe, jak i pojedyncze, krótkie zlecenia prywatne.</p>
+          <span class="feature__num">02</span>
+          <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <h3>Szybkie terminy</h3>
+          <p>Krótki czas realizacji i elastyczna dostępność maszyn na terenie całego Śląska.</p>
         </div>
-
         <div class="feature reveal" data-delay="3">
+          <span class="feature__num">03</span>
+          <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9"/><path d="M16 3.1a4 4 0 0 1 0 7.8"/></svg></div>
+          <h3>Dla firm i osób prywatnych</h3>
+          <p>Obsługujemy przedsiębiorstwa budowlane oraz klientów indywidualnych — na takich samych zasadach.</p>
+        </div>
+        <div class="feature reveal" data-delay="4">
           <span class="feature__num">04</span>
-          <div class="feature__icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 13v-1a8 8 0 0 1 16 0v1"/><rect x="3" y="13" width="4" height="6" rx="1.5"/><rect x="17" y="13" width="4" height="6" rx="1.5"/><path d="M20 19a3 3 0 0 1-3 3h-3"/></svg>
-          </div>
-          <h3>Doradztwo i obsługa</h3>
-          <p>Pomożemy dobrać maszynę do zakresu prac budowlanych, montażowych i serwisowych na Śląsku.</p>
+          <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2-2 2.6-2.6z"/></svg></div>
+          <h3>Fachowe doradztwo</h3>
+          <p>Pomożemy dobrać maszynę do wysokości, rodzaju podłoża i charakteru prowadzonych prac.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ====================== OBSZAR / ŚLĄSK ====================== -->
-  <section class="section bg-navy blueprint grain" aria-label="Obszar obsługi">
+  <!-- ====================== OBSZAR ====================== -->
+  <section id="obszar" class="section bg-navy blueprint">
     <div class="container">
-      <div class="area">
-        <div class="area__map reveal">
-          <svg viewBox="0 0 460 420" role="img" aria-label="Sieć obsługiwanych miast na Śląsku">
-            <defs>
-              <radialGradient id="hubGlow" cx="50%" cy="42%" r="55%">
-                <stop offset="0%" stop-color="#52748F" stop-opacity="0.45"/>
-                <stop offset="100%" stop-color="#52748F" stop-opacity="0"/>
-              </radialGradient>
-            </defs>
-            <g stroke="#7d99af" stroke-width="1" opacity="0.12">
-              <path d="M0 60 H460 M0 120 H460 M0 180 H460 M0 240 H460 M0 300 H460 M0 360 H460"/>
-              <path d="M60 0 V420 M120 0 V420 M180 0 V420 M240 0 V420 M300 0 V420 M360 0 V420 M420 0 V420"/>
-            </g>
-            <ellipse cx="230" cy="195" rx="210" ry="170" fill="url(#hubGlow)"/>
-            <g stroke="#7d99af" stroke-width="1.4" opacity="0.5" fill="none">
-              <path d="M230 200 L100 90"/><path d="M230 200 L355 80"/><path d="M230 200 L70 200"/>
-              <path d="M230 200 L390 180"/><path d="M230 200 L120 320"/><path d="M230 200 L320 340"/>
-              <path d="M230 200 L210 70"/><path d="M230 200 L380 290"/>
-            </g>
-            <g fill="#aebccb">
-              <circle cx="100" cy="90" r="4"/><circle cx="355" cy="80" r="4"/><circle cx="70" cy="200" r="4"/>
-              <circle cx="390" cy="180" r="4"/><circle cx="120" cy="320" r="4"/><circle cx="320" cy="340" r="4"/>
-              <circle cx="210" cy="70" r="4"/><circle cx="380" cy="290" r="4"/>
-            </g>
-            <circle cx="230" cy="200" r="30" fill="none" stroke="#f5a623" stroke-width="1.5" stroke-dasharray="3 5" opacity="0.7"/>
-            <g transform="translate(230 200)">
-              <path d="M0 -26 C 14 -26 24 -16 24 -3 C 24 12 0 30 0 30 C 0 30 -24 12 -24 -3 C -24 -16 -14 -26 0 -26 Z" fill="#f5a623"/>
-              <circle cx="0" cy="-3" r="8" fill="#152F4F"/>
-            </g>
-            <text x="230" y="404" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="13" letter-spacing="3" fill="#aebccb">ŚLĄSK — ZASIĘG OBSŁUGI</text>
-          </svg>
+      <div class="area__top">
+        <div class="reveal">
+          <span class="kicker kicker--light">Zasięg działania</span>
+          <h2 class="h-lg is-light" style="margin-top:1.1rem">Działamy na całym Śląsku</h2>
+          <p class="lead" style="margin-top:1.2rem">Podstawiamy podesty i ładowarki w Katowicach, Gliwicach, Chorzowie oraz okolicznych miastach. Skontaktuj się — sprawdzimy dostępność transportu pod Twój adres.</p>
         </div>
+        <div class="area__metric reveal" data-delay="2">
+          <div class="area-figure"><b>18</b><span>Miast w zasięgu</span></div>
+          <div class="area-figure"><b>6</b><span>Typów maszyn</span></div>
+        </div>
+      </div>
 
-        <div class="reveal" data-delay="1">
-          <span class="kicker kicker--ondark">Obszar obsługi</span>
-          <h2 class="h-lg">Działamy na terenie całego Śląska</h2>
-          <p class="lead" style="color:var(--text-on-dark-soft); margin:1.2rem 0 2rem;">Dostarczamy podesty ruchome i ładowarki teleskopowe do Katowic, Gliwic, Chorzowa i sąsiednich miast. Zapytaj o dojazd pod Twój adres.</p>
-          <ul class="cities">
-            <li>Katowice</li><li>Gliwice</li><li>Chorzów</li><li>Zabrze</li>
-            <li>Ruda Śląska</li><li>Bytom</li><li>Sosnowiec</li><li>Dąbrowa Górnicza</li>
-            <li>Będzin</li><li>Piekary Śląskie</li><li>Świętochłowice</li><li>Żory</li>
-            <li>Jastrzębie-Zdrój</li><li>Racibórz</li><li>Rydułtowy</li><li>Myszków</li>
-            <li>Bielsko-Biała</li><li>Opole</li>
-          </ul>
-        </div>
+      <div class="cities reveal">
+        <span class="city">Katowice</span>
+        <span class="city">Gliwice</span>
+        <span class="city">Chorzów</span>
+        <span class="city">Zabrze</span>
+        <span class="city">Ruda Śląska</span>
+        <span class="city">Bytom</span>
+        <span class="city">Sosnowiec</span>
+        <span class="city">Dąbrowa Górnicza</span>
+        <span class="city">Będzin</span>
+        <span class="city">Piekary Śląskie</span>
+        <span class="city">Świętochłowice</span>
+        <span class="city">Żory</span>
+        <span class="city">Jastrzębie-Zdrój</span>
+        <span class="city">Racibórz</span>
+        <span class="city">Rydułtowy</span>
+        <span class="city">Myszków</span>
+        <span class="city">Bielsko-Biała</span>
+        <span class="city">Opole</span>
+        <span class="city city--more">+ okolice</span>
       </div>
     </div>
   </section>
 
-  <!-- ====================== KIM JESTEŚMY ====================== -->
-  <section class="section bg-concrete" aria-label="O firmie 4Rent">
+  <!-- ====================== O NAS ====================== -->
+  <section id="o-nas" class="section bg-paper">
     <div class="container">
       <div class="about">
-        <div class="about__badge reveal">
-          <svg viewBox="0 0 240 240" role="img" aria-label="4Rent — Wypożyczalnia Maszyn Budowlanych">
-            <defs>
-              <path id="ringTop" d="M 30,120 A 90,90 0 0 1 210,120"/>
-              <path id="ringBot" d="M 38,120 A 82,82 0 0 0 202,120"/>
-            </defs>
-            <circle cx="120" cy="120" r="117" fill="#0d1f36"/>
-            <circle cx="120" cy="120" r="113" fill="none" stroke="#f5a623" stroke-width="2.5"/>
-            <circle cx="120" cy="120" r="100" fill="#152F4F"/>
-            <circle cx="120" cy="120" r="78" fill="none" stroke="#7d99af" stroke-width="1.4" stroke-dasharray="3 6" opacity="0.6"/>
-            <text font-family="'JetBrains Mono', monospace" font-size="15" letter-spacing="4" font-weight="600" fill="#ffffff">
-              <textPath href="#ringTop" startOffset="50%" text-anchor="middle">WYPOŻYCZALNIA MASZYN</textPath>
-            </text>
-            <text font-family="'JetBrains Mono', monospace" font-size="15" letter-spacing="4" font-weight="600" fill="#ffffff">
-              <textPath href="#ringBot" startOffset="50%" text-anchor="middle">BUDOWLANYCH</textPath>
-            </text>
-            <g fill="#f5a623">
-              <circle cx="120" cy="118" r="2.6" transform="rotate(-90 120 120) translate(0 -98)"/>
-              <circle cx="120" cy="118" r="2.6" transform="rotate(90 120 120) translate(0 -98)"/>
-            </g>
-            <g transform="translate(120 120)">
-              <rect x="-28" y="-30" width="56" height="6" rx="2" fill="#ffffff"/>
-              <path d="M-22 -30 V-40 H22 V-30" fill="none" stroke="#f5a623" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
-              <g stroke="#ffffff" stroke-width="3.6" stroke-linecap="round" fill="none">
-                <path d="M-18 -22 L18 14"/><path d="M18 -22 L-18 14"/>
-                <path d="M-18 -4 L18 14"/><path d="M18 -4 L-18 14"/>
-              </g>
-              <rect x="-24" y="16" width="48" height="6" rx="2" fill="#52748F"/>
-              <text y="44" text-anchor="middle" font-family="'Saira Condensed', sans-serif" font-size="20" font-weight="800" letter-spacing="1" fill="#f5a623">4R</text>
-            </g>
-          </svg>
+        <div class="about__body reveal">
+          <span class="kicker">O nas</span>
+          <h2 class="h-lg" style="margin-top:1.1rem;margin-bottom:1.4rem">Kim jesteśmy</h2>
+          <p>Od początku działalności naszym priorytetem jest zadowolenie klienta. Wysoki standard obsługi traktujemy jako bodziec do nieustannego rozwoju — dlatego stawiamy na sprawdzony sprzęt, terminowość i rzetelne doradztwo.</p>
+          <p>Oferujemy wynajem podestów ruchomych i ładowarek teleskopowych do prac budowlanych, montażowych oraz serwisowych. Współpracujemy zarówno z firmami, jak i z klientami indywidualnymi z terenu całego Śląska.</p>
+          <div class="about__figures">
+            <div class="figure"><b>6472595920</b><span>NIP</span></div>
+            <div class="figure"><b>0000934178</b><span>KRS</span></div>
+            <div class="figure"><b>520513790</b><span>REGON</span></div>
+          </div>
         </div>
 
-        <div class="about__body reveal" data-delay="1">
-          <span class="kicker">Kim jesteśmy</span>
-          <h2 class="h-md">4Rent — wypożyczalnia maszyn budowlanych</h2>
-          <p>Specjalizujemy się w wynajmie <strong>podestów ruchomych</strong> oraz <strong>ładowarek teleskopowych</strong> dla firm i klientów indywidualnych z terenu Śląska. Nasz sprzęt sprawdza się przy pracach budowlanych, montażowych i serwisowych.</p>
-          <p>Od momentu założenia firma stawia za priorytet <strong>zadowolenie klienta</strong>. Wysoki standard obsługi stał się bodźcem do dalszego rozwoju — dlatego stawiamy na sprawny sprzęt, jasne zasady i szybki kontakt.</p>
-          <div class="figures">
-            <div class="figure">
-              <div class="figure__num"><span>6</span></div>
-              <div class="figure__label">Typów maszyn</div>
-            </div>
-            <div class="figure">
-              <div class="figure__num">do <span>26</span> m</div>
-              <div class="figure__label">Zasięg roboczy</div>
-            </div>
-            <div class="figure">
-              <div class="figure__num"><span>18</span>+</div>
-              <div class="figure__label">Miast na Śląsku</div>
-            </div>
+        <div class="about__emblem reveal" data-delay="2">
+          <div class="about__emblem-frame">
+            <svg class="about__ring-text" viewBox="0 0 100 100" aria-hidden="true">
+              <defs><path id="ring" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0"/></defs>
+              <text><textPath href="#ring" startOffset="0">WYPOŻYCZALNIA MASZYN BUDOWLANYCH · 4RENT · ŚLĄSK · </textPath></text>
+            </svg>
+            <svg class="logo__mark" viewBox="0 0 96 96" aria-hidden="true">
+              <g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" opacity=".9">
+                <line x1="21" y1="29" x2="75" y2="29"/><line x1="21" y1="29" x2="21" y2="47"/><line x1="75" y1="29" x2="75" y2="47"/>
+              </g>
+              <text x="48" y="46" text-anchor="middle" font-family="'Saira Condensed','Arial Narrow',sans-serif" font-weight="800" font-size="23" fill="currentColor">4R</text>
+              <rect x="17" y="47" width="62" height="7" rx="2" fill="currentColor"/>
+              <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" opacity=".6">
+                <line x1="30" y1="55" x2="66" y2="68"/><line x1="66" y1="55" x2="30" y2="68"/><line x1="30" y1="63" x2="66" y2="76"/><line x1="66" y1="63" x2="30" y2="76"/>
+              </g>
+              <g fill="#2E90E5"><circle cx="48" cy="61.5" r="2.1"/><circle cx="48" cy="69.5" r="2.1"/></g>
+              <rect x="24" y="75" width="48" height="7" rx="2" fill="currentColor"/>
+              <g fill="currentColor"><circle cx="34" cy="86" r="7"/><circle cx="62" cy="86" r="7"/></g>
+            </svg>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ====================== PASEK CTA ====================== -->
-  <section class="cta-band blueprint">
+  <!-- ====================== KONTAKT ====================== -->
+  <section id="kontakt" class="section bg-navy-deep blueprint grain">
     <div class="container">
-      <div class="cta-band__inner">
-        <div>
-          <span class="kicker kicker--light">Wynajem maszyn budowlanych</span>
-          <h2 class="h-lg" style="margin-top:0.7rem;">Sprawdź dostępność sprzętu</h2>
-          <p>Zadzwoń lub napisz — potwierdzimy dostępność maszyny, termin i warunki wynajmu na terenie Śląska.</p>
+      <div class="sec-head reveal">
+        <span class="kicker kicker--light">Kontakt</span>
+        <h2 class="h-lg is-light">Zapytaj o dostępność maszyn</h2>
+        <p class="lead">Zadzwoń lub wyślij zapytanie — dobierzemy sprzęt, podamy termin i przygotujemy wycenę.</p>
+      </div>
+
+      <div class="contact">
+        <div class="contact-info reveal">
+          <div class="contact-card">
+            <div class="contact-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></div>
+            <div>
+              <div class="contact-card__label">Telefon</div>
+              <a href="tel:+48509238087" class="contact-card__value">509 238 087</a>
+              <div class="contact-card__note">Pon.–Pt. — zadzwoń, oddzwonimy</div>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 6 9 7 9-7"/></svg></div>
+            <div>
+              <div class="contact-card__label">E-mail</div>
+              <a href="mailto:biuro@4-rent.com.pl" class="contact-card__value contact-card__value--sm">biuro@4-rent.com.pl</a>
+              <div class="contact-card__note">Odpowiadamy w dni robocze</div>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div>
+              <div class="contact-card__label">Obszar</div>
+              <div class="contact-card__value contact-card__value--sm">Katowice · Gliwice · cały Śląsk</div>
+              <div class="contact-card__note">Dowóz sprzętu pod adres</div>
+            </div>
+          </div>
         </div>
-        <div class="cta-band__actions">
-          <a class="cta-band__phone" href="tel:+48509238087">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg>
-            509 238 087
-          </a>
-          <a class="btn btn--amber" href="kontakt.html">
-            Formularz kontaktowy
-            <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
+
+        <div class="form-wrap reveal" data-delay="2">
+          <h3 class="form-wrap__title">Formularz zapytania</h3>
+          <p class="form-wrap__sub">Wypełnij — przygotujemy ofertę dopasowaną do Twoich prac.</p>
+          <form id="lead-form" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="imie">Imię i nazwisko <span class="req">*</span></label>
+                <input type="text" id="imie" name="imie" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="telefon">Telefon <span class="req">*</span></label>
+                <input type="tel" id="telefon" name="telefon" autocomplete="tel" required>
+              </div>
+              <div class="field field--full">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" autocomplete="email">
+              </div>
+              <div class="field field--full">
+                <label for="sprzet">Rodzaj sprzętu</label>
+                <select id="sprzet" name="sprzet">
+                  <option value="">— wybierz —</option>
+                  <option>Podest nożycowy</option>
+                  <option>Podest przegubowy / teleskopowy</option>
+                  <option>Ładowarka teleskopowa</option>
+                  <option>Ładowarka obrotowa 360°</option>
+                  <option>Nie wiem / proszę o doradztwo</option>
+                </select>
+              </div>
+              <div class="field field--full">
+                <label for="wiadomosc">Wiadomość <span class="req">*</span></label>
+                <textarea id="wiadomosc" name="wiadomosc" placeholder="Opisz zakres prac, wysokość, termin i lokalizację." required></textarea>
+              </div>
+            </div>
+            <div class="form-foot">
+              <button type="submit" class="btn btn--accent btn--lg">Wyślij zapytanie
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+              </button>
+              <p class="form-note">Formularz otworzy Twój program pocztowy z gotową wiadomością do <b>biuro@4-rent.com.pl</b>. Wolisz szybciej? Zadzwoń: <b>509 238 087</b>.</p>
+            </div>
+          </form>
         </div>
       </div>
     </div>
@@ -489,82 +553,106 @@
 
 <!-- ====================== STOPKA ====================== -->
 <footer class="site-footer">
-  <div class="hazard" aria-hidden="true"></div>
+  <div class="rule-strip" aria-hidden="true"></div>
   <div class="container">
     <div class="footer__grid">
       <div class="footer__brand">
-        <a class="logo" href="index.html" aria-label="4Rent — strona główna">
-          <svg class="logo__mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
-            <rect x="9" y="10" width="30" height="3.6" rx="1.2" fill="currentColor"/>
-            <path d="M13 10 V5.5 H35 V10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
-            <g stroke="currentColor" stroke-width="2.6" stroke-linecap="round">
-              <path d="M16 16 L32 33"/><path d="M32 16 L16 33"/>
-              <path d="M16 24.5 L32 33"/><path d="M32 24.5 L16 33"/>
+        <a href="#top" class="logo" aria-label="4Rent">
+          <svg class="logo__mark" viewBox="0 0 96 96" aria-hidden="true">
+            <g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" opacity=".9">
+              <line x1="21" y1="29" x2="75" y2="29"/><line x1="21" y1="29" x2="21" y2="47"/><line x1="75" y1="29" x2="75" y2="47"/>
             </g>
-            <rect x="12" y="35" width="24" height="3.6" rx="1.2" fill="currentColor" opacity="0.55"/>
-            <circle cx="17.5" cy="42" r="2.4" fill="currentColor"/>
-            <circle cx="30.5" cy="42" r="2.4" fill="currentColor"/>
+            <text x="48" y="46" text-anchor="middle" font-family="'Saira Condensed','Arial Narrow',sans-serif" font-weight="800" font-size="23" fill="currentColor">4R</text>
+            <rect x="17" y="47" width="62" height="7" rx="2" fill="currentColor"/>
+            <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" opacity=".6">
+              <line x1="30" y1="55" x2="66" y2="68"/><line x1="66" y1="55" x2="30" y2="68"/><line x1="30" y1="63" x2="66" y2="76"/><line x1="66" y1="63" x2="30" y2="76"/>
+            </g>
+            <g fill="#2E90E5"><circle cx="48" cy="61.5" r="2.1"/><circle cx="48" cy="69.5" r="2.1"/></g>
+            <rect x="24" y="75" width="48" height="7" rx="2" fill="currentColor"/>
+            <g fill="currentColor"><circle cx="34" cy="86" r="7"/><circle cx="62" cy="86" r="7"/></g>
           </svg>
           <span class="logo__text">
             <span class="logo__name"><b>4</b>RENT</span>
-            <span class="logo__sub">Wynajem maszyn budowlanych</span>
+            <span class="logo__sub">Wypożyczalnia maszyn · Śląsk</span>
           </span>
         </a>
         <p class="footer__about">Wynajem podestów ruchomych i ładowarek teleskopowych na terenie Katowic, Gliwic, Chorzowa i całego Śląska.</p>
-        <p class="footer__legal">
-          4Rent Wypożyczalnia Maszyn Budowlanych sp. z o.o.<br>
-          NIP: 6472595920<br>
-          KRS: 0000934178<br>
-          REGON: 520513790
-        </p>
+        <div class="footer__legal">
+          NIP 6472595920<br>
+          KRS 0000934178<br>
+          REGON 520513790
+        </div>
       </div>
 
-      <nav class="footer__col" aria-label="Oferta">
+      <div class="footer__col">
         <h4>Oferta</h4>
         <ul>
-          <li><a href="podesty-ruchome.html">Podesty ruchome</a></li>
-          <li><a href="podesty-ruchome.html">Podesty nożycowe</a></li>
-          <li><a href="podesty-ruchome.html">Podesty przegubowe</a></li>
-          <li><a href="ladowarki-teleskopowe.html">Ładowarki teleskopowe</a></li>
-          <li><a href="ladowarki-teleskopowe.html">Ładowarka obrotowa 360°</a></li>
+          <li><a href="#oferta">Podesty nożycowe</a></li>
+          <li><a href="#oferta">Podesty przegubowe</a></li>
+          <li><a href="#oferta">Ładowarki teleskopowe</a></li>
+          <li><a href="#oferta">Ładowarka obrotowa 360°</a></li>
         </ul>
-      </nav>
+      </div>
 
-      <nav class="footer__col" aria-label="Nawigacja">
+      <div class="footer__col">
         <h4>Nawigacja</h4>
         <ul>
-          <li><a href="index.html">Start</a></li>
-          <li><a href="index.html#sprzet">Nasz sprzęt</a></li>
-          <li><a href="podesty-ruchome.html">Podesty ruchome</a></li>
-          <li><a href="ladowarki-teleskopowe.html">Ładowarki teleskopowe</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="#realizacje">Realizacje</a></li>
+          <li><a href="#obszar">Obszar działania</a></li>
+          <li><a href="#o-nas">O nas</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
         </ul>
-      </nav>
+      </div>
 
       <div class="footer__col">
         <h4>Kontakt</h4>
         <div class="footer__contact-item">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
           <a href="tel:+48509238087">509 238 087</a>
         </div>
         <div class="footer__contact-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 6 9 7 9-7"/></svg>
           <a href="mailto:biuro@4-rent.com.pl">biuro@4-rent.com.pl</a>
         </div>
         <div class="footer__contact-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
-          <span>Śląsk — Katowice, Gliwice, Chorzów i okolice</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Cały Śląsk</span>
         </div>
       </div>
     </div>
 
     <div class="footer__bottom">
-      <span>© <span id="year">2026</span> 4Rent Wypożyczalnia Maszyn Budowlanych sp. z o.o. — Wszelkie prawa zastrzeżone.</span>
-      <span class="topbar__tag">Podesty ruchome · Ładowarki teleskopowe · Śląsk</span>
+      <span>© <span id="year">2026</span> 4Rent Wypożyczalnia Maszyn Budowlanych sp. z o.o.</span>
+      <a href="#top">Do góry ↑</a>
     </div>
   </div>
 </footer>
 
 <script src="js/main.js"></script>
+<script>
+/* Formularz → wiadomość e-mail (mailto) */
+(function () {
+  var form = document.getElementById("lead-form");
+  if (!form) return;
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    if (!form.checkValidity()) { form.reportValidity(); return; }
+    var v = function (n) { var el = form.elements[n]; return el ? el.value.trim() : ""; };
+    var sprzet = v("sprzet");
+    var subject = "Zapytanie o wynajem — " + (sprzet || "sprzęt");
+    var body = [
+      "Imię i nazwisko: " + v("imie"),
+      "Telefon: " + v("telefon"),
+      "E-mail: " + (v("email") || "—"),
+      "Rodzaj sprzętu: " + (sprzet || "—"),
+      "",
+      "Wiadomość:",
+      v("wiadomosc")
+    ].join("\n");
+    window.location.href = "mailto:biuro@4-rent.com.pl?subject=" +
+      encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+  });
+})();
+</script>
 </body>
 </html>
