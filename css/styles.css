@@ -651,3 +651,10 @@ body.menu-open .nav-backdrop{opacity:1;visibility:visible}
 .article__cta-actions{display:flex;flex-wrap:wrap;gap:.9rem;justify-content:center}
 
 @media (max-width:520px){.article-grid{grid-template-columns:1fr}}
+
+/* bloki artykułów na jednej stronie (artykuly.html) */
+.post + .post{margin-top:clamp(2.4rem,6vw,4rem);padding-top:clamp(2.4rem,6vw,4rem);border-top:1px solid var(--hair)}
+.post__head{margin-bottom:1.4rem}
+.post__cat{font-family:var(--font-mono);font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-deep)}
+.post__title{font-family:var(--font-display);font-weight:800;text-transform:uppercase;font-size:clamp(1.7rem,1.2rem + 2vw,2.6rem);line-height:1.04;color:var(--navy);margin:.5rem 0 .7rem}
+.post__meta{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;font-family:var(--font-mono);font-size:.78rem;color:var(--text-soft)}

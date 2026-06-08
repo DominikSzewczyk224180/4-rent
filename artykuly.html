@@ -94,51 +94,43 @@
 
   <!-- ====================== LISTA ARTYKUŁÓW ====================== -->
   <section class="section bg-concrete">
-    <div class="container">
+    <div class="container container--narrow">
 
       <!-- ===================================================================
-           STAN PUSTY: pokazuje się, dopóki nie ma artykułów.
-           Gdy dodasz pierwszy artykuł: USUŃ ten blok <div class="articles-empty">
-           i ODKOMENTUJ siatkę <div class="article-grid"> poniżej.
+           ARTYKUŁY  (wszystkie na tej jednej stronie)
+           Każdy artykuł = jeden blok <article class="post"> ... </article>.
+           ABY DODAĆ KOLEJNY ARTYKUŁ:
+             1. Skopiuj CAŁY blok <article class="post"> poniżej.
+             2. Wklej go pod spodem (nad komentarzem "KONIEC listy").
+             3. Zastąp tytuł, kategorię i datę swoimi.
+             4. Treść tekstową od Teresy wklej w środku <div class="article__body">
+                (akapity w <p>...</p>, śródtytuły w <h3>...</h3>, listy w <ul><li>).
       ==================================================================== -->
-      <div class="articles-empty">
-        <div class="articles-empty__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h5"/></svg></div>
-        <h2>Pierwsze artykuły już wkrótce</h2>
-        <p>Przygotowujemy poradnik o podestach ruchomych i ładowarkach teleskopowych. Zajrzyj tu niebawem, a jeśli masz pytania o sprzęt, po prostu zadzwoń.</p>
-        <div class="center-btn"><a href="index.html#kontakt" class="btn btn--accent">Skontaktuj się</a></div>
-      </div>
 
-      <!-- ===================================================================
-           SIATKA ARTYKUŁÓW (na razie wyłączona).
-           JAK DODAĆ ARTYKUŁ:
-           1. Usuń blok .articles-empty powyżej.
-           2. Usuń znaczniki komentarza  oraz  wokół siatki poniżej.
-           3. Dla każdego artykułu skopiuj jedną <article class="article-card"> i wypełnij ją.
-           4. Każdy artykuł to osobny plik, skopiuj "artykul-szablon.html",
-              zmień nazwę (np. "jak-dobrac-podest.html") i podlinkuj go w href.
-      ==================================================================== -->
-      <!--
-      <div class="article-grid">
+      <article class="post">
+        <header class="post__head">
+          <span class="post__cat">Kategoria (np. Podesty ruchome)</span>
+          <h2 class="post__title">Tytuł artykułu (przykład)</h2>
+          <div class="post__meta"><span>4Rent</span><span aria-hidden="true">•</span><span>Data publikacji</span></div>
+        </header>
+        <div class="article__body">
+          <p>To jest przykładowy układ artykułu, który pokazuje, jak będzie wyglądał gotowy wpis na stronie. Zastąp ten tekst treścią artykułu od Teresy.</p>
+          <p>Wstęp: 2-3 zdania streszczające, czego dotyczy artykuł. Warto używać słów, których klienci szukają w internecie, np. „wynajem podestu nożycowego" albo „ładowarka teleskopowa Śląsk".</p>
 
-        <article class="article-card">
-          <a class="article-card__media" href="artykul-szablon.html">
-            <img src="assets/photos/podest-nozycowy.jpg" alt="Krótki opis zdjęcia (ważne dla SEO)">
-          </a>
-          <div class="article-card__body">
-            <span class="article-card__cat">Podesty ruchome</span>
-            <h2 class="article-card__title"><a href="artykul-szablon.html">Tytuł artykułu</a></h2>
-            <p class="article-card__excerpt">Jedno lub dwa zdania zajawki, które zachęcą do przeczytania całości.</p>
-            <div class="article-card__meta">
-              <span>1 lipca 2026</span>
-              <span class="article-card__link">Czytaj więcej →</span>
-            </div>
-          </div>
-        </article>
+          <h3>Śródtytuł w artykule</h3>
+          <p>Akapit treści. Tekst można dzielić na sekcje, dodawać wypunktowania i wyróżnienia.</p>
+          <ul>
+            <li>Najważniejsza informacja w punkcie.</li>
+            <li>Kolejny przydatny punkt.</li>
+          </ul>
 
-        (skopiuj powyższy blok "article-card" dla każdego kolejnego artykułu)
+          <h3>Kolejny śródtytuł</h3>
+          <p>Dalsza treść artykułu. Na końcu warto dodać krótką zachętę do kontaktu.</p>
+          <blockquote>Najważniejszą myśl można wyróżnić w takiej ramce.</blockquote>
+        </div>
+      </article>
 
-      </div>
-      -->
+      <!-- KONIEC listy artykułów. Nowe wpisy dodawaj nad tą linią (kopiując blok <article class="post"> powyżej). -->
 
     </div>
   </section>

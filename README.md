@@ -17,8 +17,7 @@ Idealne pod **GitHub Pages**.
 ```
 4rent-website/
 ├── index.html              ← CAŁA strona (wszystkie sekcje na jednej stronie)
-├── artykuly.html           ← strona "Artykuły" (lista wpisów, pod SEO)
-├── artykul-szablon.html    ← szablon pojedynczego artykułu (do kopiowania)
+├── artykuly.html           ← strona "Artykuły" (wszystkie wpisy na jednej stronie, pod SEO)
 ├── css/
 │   └── styles.css          ← cały wygląd (kolory, układ, fonty, animacje)
 ├── js/
@@ -102,24 +101,27 @@ Szczegóły (zalecane wymiary, waga) w pliku `assets/photos/README.txt`.
 ## Artykuły (poradnik pod SEO)
 
 Strona ma osobną zakładkę **Artykuły** (plik `artykuly.html`), dostępną z górnego
-menu. To miejsce na wpisy o maszynach, które z czasem pomogą stronie wybić się
-wyżej w Google (im więcej wartościowych treści ze słowami, których szukają
-klienci, tym lepiej dla pozycjonowania).
+menu. Wszystkie wpisy są na tej jednej stronie, jeden pod drugim. To miejsce na
+treści o maszynach, które z czasem pomogą stronie wybić się wyżej w Google
+(im więcej wartościowych tekstów ze słowami, których szukają klienci, tym lepiej
+dla pozycjonowania).
 
-Jak dodać nowy artykuł:
+Jak dodać nowy artykuł (prosto, bez zakładania nowych plików):
 
-1. Skopiuj plik `artykul-szablon.html` i nadaj mu nazwę pasującą do tematu,
-   np. `jak-wybrac-podest-nozycowy.html` (małe litery, bez polskich znaków,
-   myślniki zamiast spacji, to ważne dla adresu strony i SEO).
-2. Otwórz nowy plik i wypełnij go zgodnie z instrukcją, która jest na samej
-   górze pliku (w komentarzu): tytuł, krótki opis, treść, zdjęcie.
-3. Wejdź do `artykuly.html` i postępuj wg instrukcji w komentarzu: usuń blok
-   "stan pusty", odkomentuj siatkę i dodaj kartę nowego artykułu (gotowy wzór
-   karty jest tuż obok w komentarzu). W karcie podlinkuj plik z punktu 1.
-4. Wgraj nowe pliki na GitHub tak samo jak resztę strony.
+1. Otwórz plik `artykuly.html`.
+2. Znajdź gotowy blok artykułu, czyli fragment od `<article class="post">`
+   do `</article>` (jest tam przykładowy wpis z instrukcją w komentarzu).
+3. Skopiuj cały ten blok i wklej go pod spodem (nad linią "KONIEC listy artykułów").
+4. W nowym bloku wpisz: tytuł, kategorię i datę, a treść od Teresy wklej w środku
+   `<div class="article__body">`: akapity w `<p>...</p>`, śródtytuły w `<h3>...</h3>`,
+   listy w `<ul><li>...</li></ul>`.
+5. Pierwszy (przykładowy) wpis po prostu zastąp pierwszym prawdziwym artykułem.
+6. Wgraj zmieniony plik na GitHub.
 
-Dopóki nie ma żadnego artykułu, na stronie wyświetla się komunikat
-"Pierwsze artykuły już wkrótce", więc zakładka nigdy nie jest pusta.
+Wskazówka pod SEO: gdyby z czasem artykułów było dużo, każdy może stać się
+osobną podstroną (wtedy każdy osobno pojawia się w wynikach Google). Układ jest
+przygotowany tak, że taka zmiana będzie łatwa. Na początek jedna strona w zupełności
+wystarcza.
 
 ## Fonty
 
