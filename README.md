@@ -17,6 +17,8 @@ Idealne pod **GitHub Pages**.
 ```
 4rent-website/
 ├── index.html              ← CAŁA strona (wszystkie sekcje na jednej stronie)
+├── artykuly.html           ← strona "Artykuły" (lista wpisów, pod SEO)
+├── artykul-szablon.html    ← szablon pojedynczego artykułu (do kopiowania)
 ├── css/
 │   └── styles.css          ← cały wygląd (kolory, układ, fonty, animacje)
 ├── js/
@@ -96,6 +98,28 @@ Zmieniasz wartość w jednym miejscu, zmienia się w całej stronie.
 Prawdziwe zdjęcia maszyn są już wgrane w `assets/photos/`. Żeby podmienić
 któreś na lepsze (np. zdjęcia własnego sprzętu), podłóż plik o tej samej nazwie.
 Szczegóły (zalecane wymiary, waga) w pliku `assets/photos/README.txt`.
+
+## Artykuły (poradnik pod SEO)
+
+Strona ma osobną zakładkę **Artykuły** (plik `artykuly.html`), dostępną z górnego
+menu. To miejsce na wpisy o maszynach, które z czasem pomogą stronie wybić się
+wyżej w Google (im więcej wartościowych treści ze słowami, których szukają
+klienci, tym lepiej dla pozycjonowania).
+
+Jak dodać nowy artykuł:
+
+1. Skopiuj plik `artykul-szablon.html` i nadaj mu nazwę pasującą do tematu,
+   np. `jak-wybrac-podest-nozycowy.html` (małe litery, bez polskich znaków,
+   myślniki zamiast spacji, to ważne dla adresu strony i SEO).
+2. Otwórz nowy plik i wypełnij go zgodnie z instrukcją, która jest na samej
+   górze pliku (w komentarzu): tytuł, krótki opis, treść, zdjęcie.
+3. Wejdź do `artykuly.html` i postępuj wg instrukcji w komentarzu: usuń blok
+   "stan pusty", odkomentuj siatkę i dodaj kartę nowego artykułu (gotowy wzór
+   karty jest tuż obok w komentarzu). W karcie podlinkuj plik z punktu 1.
+4. Wgraj nowe pliki na GitHub tak samo jak resztę strony.
+
+Dopóki nie ma żadnego artykułu, na stronie wyświetla się komunikat
+"Pierwsze artykuły już wkrótce", więc zakładka nigdy nie jest pusta.
 
 ## Fonty
 
