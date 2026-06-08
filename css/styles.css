@@ -415,6 +415,7 @@ body.menu-open .nav-backdrop{opacity:1;visibility:visible}
   .gallery{grid-template-columns:repeat(2,1fr)}
   .gallery__tile:first-child{grid-row:span 1;grid-column:span 2}
 }
+@media (max-width:720px){.equip-grid,.equip-grid--two{grid-template-columns:1fr}}
 @media (max-width:520px){
   .gallery{grid-template-columns:1fr}
   .gallery__tile:first-child{grid-column:span 1}
