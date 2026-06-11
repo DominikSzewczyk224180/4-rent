@@ -478,7 +478,7 @@ body.menu-open .nav-backdrop{opacity:1;visibility:visible}
   border:1px dashed rgba(134,162,184,.4);
 }
 .about__emblem-frame .logo__mark{width:54%;height:54%;color:#fff}
-.about__emblem-frame .about__emblem-mark{height:52%;width:auto;max-width:58%;object-fit:contain}
+.about__emblem-frame .about__emblem-mark{height:44%;width:auto;max-width:50%;object-fit:contain}
 .about__ring-text{position:absolute;inset:0;animation:spin 60s linear infinite}
 @media (prefers-reduced-motion:reduce){.about__ring-text{animation:none}}
 .about__ring-text text{font-family:var(--font-mono);font-weight:600;font-size:8px;letter-spacing:2px;fill:var(--steel-light);text-transform:uppercase}
