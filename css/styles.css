@@ -734,3 +734,45 @@ body.spec-open{overflow:hidden}
   .spec-modal__foot .btn{width:100%}
 }
 @media (prefers-reduced-motion:reduce){.spec-modal__panel{animation:none}}
+
+/* ============================================================
+   OFERTA v2 · akordeon kategorii + karty linkujące do podstron
+   ============================================================ */
+.lift-card__media{display:block;text-decoration:none}
+.lift-card__name a{color:inherit;text-decoration:none;transition:color .25s var(--ease)}
+.lift-card__name a:hover{color:var(--accent-deep)}
+
+.cat-acc{margin-bottom:1rem;border:1px solid var(--hair);border-radius:var(--radius);background:var(--white);overflow:hidden;transition:box-shadow .3s var(--ease),border-color .3s var(--ease)}
+.cat-acc:last-child{margin-bottom:0}
+.cat-acc[open]{box-shadow:var(--shadow-sm);border-color:var(--hair-strong)}
+.cat-acc__head{list-style:none;cursor:pointer;display:flex;align-items:center;gap:1rem;padding:clamp(1rem,2.4vw,1.4rem) clamp(1.1rem,2.4vw,1.5rem);user-select:none;transition:background .25s var(--ease)}
+.cat-acc__head::-webkit-details-marker{display:none}
+.cat-acc__head:hover{background:var(--paper)}
+.cat-acc__head .cat__index{align-self:flex-start;margin-top:.25rem}
+.cat-acc__titlewrap{flex:1;display:flex;flex-direction:column;gap:.3rem;min-width:0}
+.cat-acc__title{font-family:var(--font-display);font-weight:700;text-transform:uppercase;font-size:clamp(1.15rem,2.3vw,1.55rem);line-height:1.04;letter-spacing:.01em;color:var(--navy)}
+.cat-acc__head:hover .cat-acc__title{color:var(--accent-deep)}
+.cat-acc__chev{width:1.4rem;height:1.4rem;color:var(--accent-deep);flex-shrink:0;transition:transform .3s var(--ease)}
+.cat-acc[open] .cat-acc__chev{transform:rotate(180deg)}
+.cat-acc[open] .cat-acc__head{border-bottom:1px solid var(--hair);background:var(--paper)}
+.cat-acc__panel{padding:clamp(1.3rem,3vw,1.8rem) clamp(1.1rem,2.4vw,1.5rem) clamp(1.4rem,3vw,1.9rem);position:relative}
+.cat-acc__panel::before{content:"";position:absolute;left:clamp(1.1rem,2.4vw,1.5rem);top:0;width:48px;height:2px;background:var(--accent)}
+
+/* ---------- PODSTRONA SPECYFIKACJI ---------- */
+.spec-wrap{padding:clamp(2rem,5vw,4rem) 0 clamp(3rem,7vw,5.5rem);background:var(--paper);min-height:62vh}
+.spec-hero{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(1.5rem,4vw,3rem);align-items:center;margin-bottom:clamp(2.2rem,5vw,3.5rem)}
+.spec-hero__title{margin:.5rem 0 .9rem}
+.spec-hero__actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.6rem}
+.spec-hero__media{aspect-ratio:7/5;background:linear-gradient(160deg,#ffffff,#e9eef3);border:1px solid var(--hair);border-radius:var(--radius-lg);overflow:hidden}
+.spec-hero__media img{width:100%;height:100%;object-fit:contain;padding:clamp(.8rem,2vw,1.4rem)}
+.spec-sheet{display:flex;flex-direction:column;gap:1.2rem;max-width:900px;margin:0 auto}
+.spec-sheet img{display:block;width:100%;height:auto;border-radius:8px;background:#fff;box-shadow:var(--shadow-md);border:1px solid var(--hair)}
+
+@media (max-width:780px){
+  .spec-hero{grid-template-columns:1fr;gap:1.4rem}
+  .spec-hero__media{order:-1}
+  .spec-hero__actions .btn{flex:1 1 100%;justify-content:center}
+}
+@media (max-width:640px){
+  .cat-acc__head{gap:.7rem}
+}
