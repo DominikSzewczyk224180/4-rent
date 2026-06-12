@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css?v=4">
+<link rel="stylesheet" href="css/styles.css?v=5">
 </head>
 <body>
 
@@ -132,107 +132,214 @@
           <span class="kicker">Nasz sprzęt</span>
           <h2 class="h-lg">Oferta wynajmu</h2>
         </div>
-        <p class="lead">Podesty ruchome o wysokości roboczej do 26 m oraz ładowarki teleskopowe, w tym model obrotowy 360°. Dobierzemy maszynę do zadania, podłoża i miejsca pracy.</p>
+        <p class="lead">Podesty ruchome o wysokości roboczej do 43 m oraz ładowarki teleskopowe i obrotowe. Przy każdej maszynie: zdjęcie, model i pełna specyfikacja do pobrania.</p>
       </div>
 
-      <!-- Kategoria 01 · PODESTY RUCHOME -->
+      <!-- Kategoria 01 -->
       <div class="cat reveal">
         <div class="cat__head">
           <div class="cat__title">
             <span class="cat__index">01</span>
-            <h3 class="h-md">Podesty ruchome</h3>
+            <h3 class="h-md">Podesty przegubowe</h3>
           </div>
-          <span class="cat__count">4 typy · nożycowe i przegubowe</span>
+          <span class="cat__count">8 modeli · wys. robocza do 43 m</span>
         </div>
-
-        <div class="equip-grid equip-grid--two">
-          <!-- 1 -->
-          <article class="equip-card reveal" data-delay="1">
-            <div class="equip-card__media">
-              <span class="equip-card__badge badge--diesel"><span class="badge__dot"></span>Diesel</span>
-              <span class="equip-card__index">01</span>
-              <img src="assets/photos/podest-przegubowy.jpg" alt="Podest teleskopowo-przegubowy, kosz roboczy" loading="lazy">
-            </div>
-            <div class="equip-card__body">
-              <div class="equip-card__type">Teleskopowo-przegubowy</div>
-              <h4 class="equip-card__name">Podest przegubowy · diesel</h4>
-              <p class="equip-card__desc">Duży zasięg w pionie i poziomie. Idealny do prac na otwartym terenie i przy elewacjach.</p>
-              <div class="specs">
-                <div class="specs__row"><span class="specs__key">Wysokość robocza</span><span class="specs__val"><em>16-26 m</em></span></div>
-                <div class="specs__row"><span class="specs__key">Napęd</span><span class="specs__val">Diesel</span></div>
-                <div class="specs__row"><span class="specs__key">Zastosowanie</span><span class="specs__val">Teren otwarty</span></div>
-              </div>
-              <div class="equip-card__foot">
-                <a href="#kontakt" class="link-arrow">Zapytaj o dostępność
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
-                </a>
-              </div>
-            </div>
-          </article>
-          <!-- 2 -->
-          <article class="equip-card reveal" data-delay="2">
-            <div class="equip-card__media">
+        <div class="lift-grid">
+          <article class="lift-card reveal" data-delay="1"
+                   data-spec-title="Genie Z-30/20N"
+                   data-spec-cat="Podest przegubowy"
+                   data-spec-pdf="assets/specs/z-30-20n.pdf"
+                   data-spec-pages="assets/specs/preview/z-30-20n-1.jpg,assets/specs/preview/z-30-20n-2.jpg"
+                   data-spec-photo="assets/photos/lifts/z-30-20n.jpg">
+            <div class="lift-card__media" data-spec-open>
               <span class="equip-card__badge badge--electric"><span class="badge__dot"></span>Elektryczny</span>
-              <span class="equip-card__index">02</span>
-              <img src="assets/photos/podest-przegubowy-elektryczny.jpg" alt="Podest przegubowy elektryczny na placu" loading="lazy">
+              <img src="assets/photos/lifts/z-30-20n.jpg" alt="Genie Z-30/20N, podnośnik" loading="lazy">
             </div>
-            <div class="equip-card__body">
-              <div class="equip-card__type">Teleskopowo-przegubowy</div>
-              <h4 class="equip-card__name">Podest przegubowy · elektryczny</h4>
-              <p class="equip-card__desc">Cicha, bezemisyjna praca w halach i wewnątrz obiektów, z możliwością ominięcia przeszkód.</p>
-              <div class="specs">
-                <div class="specs__row"><span class="specs__key">Wysokość robocza</span><span class="specs__val"><em>11,9-15 m</em></span></div>
-                <div class="specs__row"><span class="specs__key">Napęd</span><span class="specs__val">Elektryczny</span></div>
-                <div class="specs__row"><span class="specs__key">Zastosowanie</span><span class="specs__val">Hale, wnętrza</span></div>
-              </div>
-              <div class="equip-card__foot">
-                <a href="#kontakt" class="link-arrow">Zapytaj o dostępność
+            <div class="lift-card__body">
+              <div class="lift-card__type">Przegubowy elektryczny</div>
+              <h4 class="lift-card__name">Genie Z-30/20N</h4>
+              <p class="lift-card__spec">Wys. robocza <strong>11,14 m</strong> · udźwig 227 kg · wersje N i RJ</p>
+              <div class="lift-card__foot">
+                <a class="btn btn--accent btn--sm spec-btn" href="assets/specs/z-30-20n.pdf" data-spec-open>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6"/><path d="M9 17h6"/></svg>
+                  Specyfikacja
+                </a>
+                <a class="link-arrow" href="#kontakt">Zapytaj o dostępność
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
                 </a>
               </div>
             </div>
           </article>
-          <!-- 3 -->
-          <article class="equip-card reveal" data-delay="1">
-            <div class="equip-card__media">
-              <span class="equip-card__badge badge--electric"><span class="badge__dot"></span>Elektryczny</span>
-              <span class="equip-card__index">03</span>
-              <img src="assets/photos/podest-nozycowy.jpg" alt="Podest nożycowy elektryczny" loading="lazy">
-            </div>
-            <div class="equip-card__body">
-              <div class="equip-card__type">Nożycowy</div>
-              <h4 class="equip-card__name">Podest nożycowy · elektryczny</h4>
-              <p class="equip-card__desc">Stabilna, duża platforma robocza do prac pionowych w halach i magazynach.</p>
-              <div class="specs">
-                <div class="specs__row"><span class="specs__key">Wysokość robocza</span><span class="specs__val"><em>8-14 m</em></span></div>
-                <div class="specs__row"><span class="specs__key">Napęd</span><span class="specs__val">Elektryczny</span></div>
-                <div class="specs__row"><span class="specs__key">Zastosowanie</span><span class="specs__val">Hale, wnętrza</span></div>
-              </div>
-              <div class="equip-card__foot">
-                <a href="#kontakt" class="link-arrow">Zapytaj o dostępność
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
-                </a>
-              </div>
-            </div>
-          </article>
-          <!-- 4 -->
-          <article class="equip-card reveal" data-delay="2">
-            <div class="equip-card__media">
+          <article class="lift-card reveal" data-delay="2"
+                   data-spec-title="Genie Z-45 XC"
+                   data-spec-cat="Podest przegubowy"
+                   data-spec-pdf="assets/specs/z-45-xc.pdf"
+                   data-spec-pages="assets/specs/preview/z-45-xc-1.jpg,assets/specs/preview/z-45-xc-2.jpg"
+                   data-spec-photo="assets/photos/lifts/z-45-xc.jpg">
+            <div class="lift-card__media" data-spec-open>
               <span class="equip-card__badge badge--diesel"><span class="badge__dot"></span>Diesel</span>
-              <span class="equip-card__index">04</span>
-              <img src="assets/photos/podest-nozycowy-diesel.jpg" alt="Podest nożycowy diesel" loading="lazy">
+              <img src="assets/photos/lifts/z-45-xc.jpg" alt="Genie Z-45 XC, podnośnik" loading="lazy">
             </div>
-            <div class="equip-card__body">
-              <div class="equip-card__type">Nożycowy</div>
-              <h4 class="equip-card__name">Podest nożycowy · diesel</h4>
-              <p class="equip-card__desc">Mocna jednostka terenowa do prac na zewnątrz, na nieutwardzonym podłożu.</p>
-              <div class="specs">
-                <div class="specs__row"><span class="specs__key">Wysokość robocza</span><span class="specs__val"><em>12-18 m</em></span></div>
-                <div class="specs__row"><span class="specs__key">Napęd</span><span class="specs__val">Diesel</span></div>
-                <div class="specs__row"><span class="specs__key">Zastosowanie</span><span class="specs__val">Teren otwarty</span></div>
+            <div class="lift-card__body">
+              <div class="lift-card__type">Przegubowy</div>
+              <h4 class="lift-card__name">Genie Z-45 XC</h4>
+              <p class="lift-card__spec">Wys. robocza <strong>15,86 m</strong> · udźwig 300/454 kg · wysięg boczny 7,55 m</p>
+              <div class="lift-card__foot">
+                <a class="btn btn--accent btn--sm spec-btn" href="assets/specs/z-45-xc.pdf" data-spec-open>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6"/><path d="M9 17h6"/></svg>
+                  Specyfikacja
+                </a>
+                <a class="link-arrow" href="#kontakt">Zapytaj o dostępność
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+                </a>
               </div>
-              <div class="equip-card__foot">
-                <a href="#kontakt" class="link-arrow">Zapytaj o dostępność
+            </div>
+          </article>
+          <article class="lift-card reveal" data-delay="1"
+                   data-spec-title="Genie Z-45/25 DC"
+                   data-spec-cat="Podest przegubowy"
+                   data-spec-pdf="assets/specs/z-45-25-dc.pdf"
+                   data-spec-pages="assets/specs/preview/z-45-25-dc-1.jpg,assets/specs/preview/z-45-25-dc-2.jpg"
+                   data-spec-photo="assets/photos/lifts/z-45-25-dc.jpg">
+            <div class="lift-card__media" data-spec-open>
+              <span class="equip-card__badge badge--electric"><span class="badge__dot"></span>Elektryczny</span>
+              <img src="assets/photos/lifts/z-45-25-dc.jpg" alt="Genie Z-45/25 DC, podnośnik" loading="lazy">
+            </div>
+            <div class="lift-card__body">
+              <div class="lift-card__type">Przegubowy elektryczny</div>
+              <h4 class="lift-card__name">Genie Z-45/25 DC</h4>
+              <p class="lift-card__spec">Wys. robocza <strong>15,87 m</strong> · udźwig 227 kg · zasilanie akumulatorowe 48 V</p>
+              <div class="lift-card__foot">
+                <a class="btn btn--accent btn--sm spec-btn" href="assets/specs/z-45-25-dc.pdf" data-spec-open>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6"/><path d="M9 17h6"/></svg>
+                  Specyfikacja
+                </a>
+                <a class="link-arrow" href="#kontakt">Zapytaj o dostępność
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="lift-card reveal" data-delay="2"
+                   data-spec-title="Genie Z-51/30J RT"
+                   data-spec-cat="Podest przegubowy"
+                   data-spec-pdf="assets/specs/z-51-30j-rt.pdf"
+                   data-spec-pages="assets/specs/preview/z-51-30j-rt-1.jpg,assets/specs/preview/z-51-30j-rt-2.jpg"
+                   data-spec-photo="assets/photos/lifts/z-51-30j-rt.jpg">
+            <div class="lift-card__media" data-spec-open>
+              <span class="equip-card__badge badge--diesel"><span class="badge__dot"></span>Diesel</span>
+              <img src="assets/photos/lifts/z-51-30j-rt.jpg" alt="Genie Z-51/30J RT, podnośnik" loading="lazy">
+            </div>
+            <div class="lift-card__body">
+              <div class="lift-card__type">Przegubowy</div>
+              <h4 class="lift-card__name">Genie Z-51/30J RT</h4>
+              <p class="lift-card__spec">Wys. robocza <strong>17,59 m</strong> · udźwig 227 kg · wysięg boczny 9,37 m</p>
+              <div class="lift-card__foot">
+                <a class="btn btn--accent btn--sm spec-btn" href="assets/specs/z-51-30j-rt.pdf" data-spec-open>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6"/><path d="M9 17h6"/></svg>
+                  Specyfikacja
+                </a>
+                <a class="link-arrow" href="#kontakt">Zapytaj o dostępność
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="lift-card reveal" data-delay="1"
+                   data-spec-title="Genie Z-60/34J RT"
+                   data-spec-cat="Podest przegubowy"
+                   data-spec-pdf="assets/specs/z-60-34j-rt.pdf"
+                   data-spec-pages="assets/specs/preview/z-60-34j-rt-1.jpg,assets/specs/preview/z-60-34j-rt-2.jpg"
+                   data-spec-photo="assets/photos/lifts/z-60-34j-rt.jpg">
+            <div class="lift-card__media" data-spec-open>
+              <span class="equip-card__badge badge--diesel"><span class="badge__dot"></span>Diesel</span>
+              <img src="assets/photos/lifts/z-60-34j-rt.jpg" alt="Genie Z-60/34J RT, podnośnik" loading="lazy">
+            </div>
+            <div class="lift-card__body">
+              <div class="lift-card__type">Przegubowy</div>
+              <h4 class="lift-card__name">Genie Z-60/34J RT</h4>
+              <p class="lift-card__spec">Wys. robocza <strong>20,39 m</strong> · udźwig 227 kg · wysięg boczny 11,05 m</p>
+              <div class="lift-card__foot">
+                <a class="btn btn--accent btn--sm spec-btn" href="assets/specs/z-60-34j-rt.pdf" data-spec-open>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6"/><path d="M9 17h6"/></svg>
+                  Specyfikacja
+                </a>
+                <a class="link-arrow" href="#kontakt">Zapytaj o dostępność
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="lift-card reveal" data-delay="2"
+                   data-spec-title="Genie Z-80J RT"
+                   data-spec-cat="Podest przegubowy"
+                   data-spec-pdf="assets/specs/z-80j-rt.pdf"
+                   data-spec-pages="assets/specs/preview/z-80j-rt-1.jpg,assets/specs/preview/z-80j-rt-2.jpg"
+                   data-spec-photo="assets/photos/lifts/z-80j-rt.jpg">
+            <div class="lift-card__media" data-spec-open>
+              <span class="equip-card__badge badge--diesel"><span class="badge__dot"></span>Diesel</span>
+              <img src="assets/photos/lifts/z-80j-rt.jpg" alt="Genie Z-80J RT, podnośnik" loading="lazy">
+            </div>
+            <div class="lift-card__body">
+              <div class="lift-card__type">Przegubowy</div>
+              <h4 class="lift-card__name">Genie Z-80J RT</h4>
+              <p class="lift-card__spec">Wys. robocza <strong>26,38 m</strong> · udźwig 227 kg · wysięg boczny 18,29 m</p>
+              <div class="lift-card__foot">
+                <a class="btn btn--accent btn--sm spec-btn" href="assets/specs/z-80j-rt.pdf" data-spec-open>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6"/><path d="M9 17h6"/></svg>
+                  Specyfikacja
+                </a>
+                <a class="link-arrow" href="#kontakt">Zapytaj o dostępność
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="lift-card reveal" data-delay="1"
+                   data-spec-title="Genie Z-135/70"
+                   data-spec-cat="Podest przegubowy"
+                   data-spec-pdf="assets/specs/z-135-70.pdf"
+                   data-spec-pages="assets/specs/preview/z-135-70-1.jpg,assets/specs/preview/z-135-70-2.jpg"
+                   data-spec-photo="assets/photos/lifts/z-135-70.jpg">
+            <div class="lift-card__media" data-spec-open>
+              <span class="equip-card__badge badge--diesel"><span class="badge__dot"></span>Diesel</span>
+              <img src="assets/photos/lifts/z-135-70.jpg" alt="Genie Z-135/70, podnośnik" loading="lazy">
+            </div>
+            <div class="lift-card__body">
+              <div class="lift-card__type">Przegubowy</div>
+              <h4 class="lift-card__name">Genie Z-135/70</h4>
+              <p class="lift-card__spec">Wys. robocza <strong>43,15 m</strong> · udźwig 272 kg · wysięg boczny 21,26 m</p>
+              <div class="lift-card__foot">
+                <a class="btn btn--accent btn--sm spec-btn" href="assets/specs/z-135-70.pdf" data-spec-open>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6"/><path d="M9 17h6"/></svg>
+                  Specyfikacja
+                </a>
+                <a class="link-arrow" href="#kontakt">Zapytaj o dostępność
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="lift-card reveal" data-delay="2"
+                   data-spec-title="Manitou 170 AETJ-L"
+                   data-spec-cat="Podest przegubowy"
+                   data-spec-pdf="assets/specs/manitou-170-aetj-l.pdf"
+                   data-spec-pages="assets/specs/preview/manitou-170-aetj-l-1.jpg"
+                   data-spec-photo="assets/photos/lifts/manitou-170-aetj-l.jpg">
+            <div class="lift-card__media" data-spec-open>
+              <span class="equip-card__badge badge--electric"><span class="badge__dot"></span>Elektryczny</span>
+              <img src="assets/photos/lifts/manitou-170-aetj-l.jpg" alt="Manitou 170 AETJ-L, podnośnik" loading="lazy">
+            </div>
+            <div class="lift-card__body">
+              <div class="lift-card__type">Przegubowy elektryczny</div>
+              <h4 class="lift-card__name">Manitou 170 AETJ-L</h4>
+              <p class="lift-card__spec">Przegubowy elektryczny · napęd na dwa koła · zasilanie akumulatorowe</p>
+              <div class="lift-card__foot">
+                <a class="btn btn--accent btn--sm spec-btn" href="assets/specs/manitou-170-aetj-l.pdf" data-spec-open>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6"/><path d="M9 17h6"/></svg>
+                  Specyfikacja
+                </a>
+                <a class="link-arrow" href="#kontakt">Zapytaj o dostępność
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
                 </a>
               </div>
@@ -241,58 +348,362 @@
         </div>
       </div>
 
-      <!-- Kategoria 02 · ŁADOWARKI TELESKOPOWE -->
+      <!-- Kategoria 02 -->
       <div class="cat reveal">
         <div class="cat__head">
           <div class="cat__title">
             <span class="cat__index">02</span>
-            <h3 class="h-md">Ładowarki teleskopowe</h3>
+            <h3 class="h-md">Podesty teleskopowe</h3>
           </div>
-          <span class="cat__count">2 typy · klasyczna i obrotowa</span>
+          <span class="cat__count">4 modele · wys. robocza do 34 m</span>
         </div>
-
-        <div class="equip-grid equip-grid--two equip-grid--wide">
-          <!-- 1 -->
-          <article class="equip-card reveal" data-delay="1">
-            <div class="equip-card__media">
-              <span class="equip-card__badge badge--diesel"><span class="badge__dot"></span>Ładowarka</span>
-              <span class="equip-card__index">05</span>
-              <img src="assets/photos/ladowarka-teleskopowa.jpg" alt="Ładowarka teleskopowa JCB" loading="lazy">
+        <div class="lift-grid">
+          <article class="lift-card reveal" data-delay="1"
+                   data-spec-title="Genie S-65"
+                   data-spec-cat="Podest teleskopowy"
+                   data-spec-pdf="assets/specs/s-65.pdf"
+                   data-spec-pages="assets/specs/preview/s-65-1.jpg,assets/specs/preview/s-65-2.jpg"
+                   data-spec-photo="assets/photos/lifts/s-65.jpg">
+            <div class="lift-card__media" data-spec-open>
+              <span class="equip-card__badge badge--diesel"><span class="badge__dot"></span>Diesel</span>
+              <img src="assets/photos/lifts/s-65.jpg" alt="Genie S-65, podnośnik" loading="lazy">
             </div>
-            <div class="equip-card__body">
-              <div class="equip-card__type">Teleskopowa</div>
-              <h4 class="equip-card__name">Ładowarka teleskopowa</h4>
-              <p class="equip-card__desc">Uniwersalna maszyna do podnoszenia, transportu i podawania materiałów na budowie.</p>
-              <div class="specs">
-                <div class="specs__row"><span class="specs__key">Udźwig</span><span class="specs__val"><em>na zapytanie</em></span></div>
-                <div class="specs__row"><span class="specs__key">Wysięg</span><span class="specs__val"><em>na zapytanie</em></span></div>
-                <div class="specs__row"><span class="specs__key">Typ</span><span class="specs__val">Klasyczna</span></div>
-              </div>
-              <div class="equip-card__foot">
-                <a href="tel:+48509238087" class="link-arrow">Zadzwoń po parametry
+            <div class="lift-card__body">
+              <div class="lift-card__type">Teleskopowy</div>
+              <h4 class="lift-card__name">Genie S-65</h4>
+              <p class="lift-card__spec">Wys. robocza <strong>21,81 m</strong> · udźwig 454/300 kg · wysięg boczny 16,51 m</p>
+              <div class="lift-card__foot">
+                <a class="btn btn--accent btn--sm spec-btn" href="assets/specs/s-65.pdf" data-spec-open>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6"/><path d="M9 17h6"/></svg>
+                  Specyfikacja
+                </a>
+                <a class="link-arrow" href="#kontakt">Zapytaj o dostępność
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
                 </a>
               </div>
             </div>
           </article>
-          <!-- 2 -->
-          <article class="equip-card reveal" data-delay="2">
-            <div class="equip-card__media">
-              <span class="equip-card__badge badge--electric"><span class="badge__dot"></span>Obrót 360°</span>
-              <span class="equip-card__index">06</span>
-              <img src="assets/photos/ladowarka-obrotowa.jpg" alt="Ładowarka teleskopowa obrotowa Manitou 360 stopni" loading="lazy">
+          <article class="lift-card reveal" data-delay="2"
+                   data-spec-title="Genie S85"
+                   data-spec-cat="Podest teleskopowy"
+                   data-spec-pdf="assets/specs/s-85.pdf"
+                   data-spec-pages="assets/specs/preview/s-85-1.jpg,assets/specs/preview/s-85-2.jpg"
+                   data-spec-photo="assets/photos/lifts/s-85.jpg">
+            <div class="lift-card__media" data-spec-open>
+              <span class="equip-card__badge badge--diesel"><span class="badge__dot"></span>Diesel</span>
+              <img src="assets/photos/lifts/s-85.jpg" alt="Genie S85, podnośnik" loading="lazy">
             </div>
-            <div class="equip-card__body">
-              <div class="equip-card__type">Teleskopowa obrotowa</div>
-              <h4 class="equip-card__name">Ładowarka obrotowa 360°</h4>
-              <p class="equip-card__desc">Pełny obrót wieży o 360°: praca z jednego miejsca, bez przestawiania maszyny.</p>
-              <div class="specs">
-                <div class="specs__row"><span class="specs__key">Obrót</span><span class="specs__val"><em>360°</em></span></div>
-                <div class="specs__row"><span class="specs__key">Udźwig / wysięg</span><span class="specs__val">na zapytanie</span></div>
-                <div class="specs__row"><span class="specs__key">Typ</span><span class="specs__val">Obrotowa</span></div>
+            <div class="lift-card__body">
+              <div class="lift-card__type">Teleskopowy</div>
+              <h4 class="lift-card__name">Genie S85</h4>
+              <p class="lift-card__spec">Wys. robocza <strong>27,90 m</strong> · udźwig 227 kg · wysięg boczny 23,32 m</p>
+              <div class="lift-card__foot">
+                <a class="btn btn--accent btn--sm spec-btn" href="assets/specs/s-85.pdf" data-spec-open>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6"/><path d="M9 17h6"/></svg>
+                  Specyfikacja
+                </a>
+                <a class="link-arrow" href="#kontakt">Zapytaj o dostępność
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+                </a>
               </div>
-              <div class="equip-card__foot">
-                <a href="tel:+48509238087" class="link-arrow">Zadzwoń po parametry
+            </div>
+          </article>
+          <article class="lift-card reveal" data-delay="1"
+                   data-spec-title="Genie S-85 J RT"
+                   data-spec-cat="Podest teleskopowy"
+                   data-spec-pdf="assets/specs/s-85j-rt.pdf"
+                   data-spec-pages="assets/specs/preview/s-85j-rt-1.jpg,assets/specs/preview/s-85j-rt-2.jpg"
+                   data-spec-photo="assets/photos/lifts/s-85j-rt.jpg">
+            <div class="lift-card__media" data-spec-open>
+              <span class="equip-card__badge badge--diesel"><span class="badge__dot"></span>Diesel</span>
+              <img src="assets/photos/lifts/s-85j-rt.jpg" alt="Genie S-85 J RT, podnośnik" loading="lazy">
+            </div>
+            <div class="lift-card__body">
+              <div class="lift-card__type">Teleskopowy</div>
+              <h4 class="lift-card__name">Genie S-85 J RT</h4>
+              <p class="lift-card__spec">Wys. robocza <strong>27,91 m</strong> · udźwig 227 kg · wysięg boczny 23,32 m</p>
+              <div class="lift-card__foot">
+                <a class="btn btn--accent btn--sm spec-btn" href="assets/specs/s-85j-rt.pdf" data-spec-open>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6"/><path d="M9 17h6"/></svg>
+                  Specyfikacja
+                </a>
+                <a class="link-arrow" href="#kontakt">Zapytaj o dostępność
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="lift-card reveal" data-delay="2"
+                   data-spec-title="Genie S-100 / S-105"
+                   data-spec-cat="Podest teleskopowy"
+                   data-spec-pdf="assets/specs/s-100-s-105.pdf"
+                   data-spec-pages="assets/specs/preview/s-100-s-105-1.jpg,assets/specs/preview/s-100-s-105-2.jpg"
+                   data-spec-photo="assets/photos/lifts/s-100-s-105.jpg">
+            <div class="lift-card__media" data-spec-open>
+              <span class="equip-card__badge badge--diesel"><span class="badge__dot"></span>Diesel</span>
+              <img src="assets/photos/lifts/s-100-s-105.jpg" alt="Genie S-100 / S-105, podnośnik" loading="lazy">
+            </div>
+            <div class="lift-card__body">
+              <div class="lift-card__type">Teleskopowy</div>
+              <h4 class="lift-card__name">Genie S-100 / S-105</h4>
+              <p class="lift-card__spec">Wys. robocza <strong>32,48 / 34,00 m</strong> · udźwig 340/227 kg · wysięg do 24,38 m</p>
+              <div class="lift-card__foot">
+                <a class="btn btn--accent btn--sm spec-btn" href="assets/specs/s-100-s-105.pdf" data-spec-open>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6"/><path d="M9 17h6"/></svg>
+                  Specyfikacja
+                </a>
+                <a class="link-arrow" href="#kontakt">Zapytaj o dostępność
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Kategoria 03 -->
+      <div class="cat reveal">
+        <div class="cat__head">
+          <div class="cat__title">
+            <span class="cat__index">03</span>
+            <h3 class="h-md">Podesty nożycowe</h3>
+          </div>
+          <span class="cat__count">8 modeli · wys. robocza do 18 m</span>
+        </div>
+        <div class="lift-grid">
+          <article class="lift-card reveal" data-delay="1"
+                   data-spec-title="Genie GS-1930 / GS-1932"
+                   data-spec-cat="Podest nożycowy"
+                   data-spec-pdf="assets/specs/gs-1930-1932.pdf"
+                   data-spec-pages="assets/specs/preview/gs-1930-1932-1.jpg,assets/specs/preview/gs-1930-1932-2.jpg"
+                   data-spec-photo="assets/photos/lifts/gs-1930-1932.jpg">
+            <div class="lift-card__media" data-spec-open>
+              <span class="equip-card__badge badge--electric"><span class="badge__dot"></span>Elektryczny</span>
+              <img src="assets/photos/lifts/gs-1930-1932.jpg" alt="Genie GS-1930 / GS-1932, podnośnik" loading="lazy">
+            </div>
+            <div class="lift-card__body">
+              <div class="lift-card__type">Nożycowy elektryczny</div>
+              <h4 class="lift-card__name">Genie GS-1930 / GS-1932</h4>
+              <p class="lift-card__spec">Wys. robocza <strong>7,79 m</strong> · udźwig 227 kg · do wnętrz</p>
+              <div class="lift-card__foot">
+                <a class="btn btn--accent btn--sm spec-btn" href="assets/specs/gs-1930-1932.pdf" data-spec-open>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6"/><path d="M9 17h6"/></svg>
+                  Specyfikacja
+                </a>
+                <a class="link-arrow" href="#kontakt">Zapytaj o dostępność
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="lift-card reveal" data-delay="2"
+                   data-spec-title="Genie GS-2032"
+                   data-spec-cat="Podest nożycowy"
+                   data-spec-pdf="assets/specs/gs-2032.pdf"
+                   data-spec-pages="assets/specs/preview/gs-2032-1.jpg,assets/specs/preview/gs-2032-2.jpg"
+                   data-spec-photo="assets/photos/lifts/gs-2032.jpg">
+            <div class="lift-card__media" data-spec-open>
+              <span class="equip-card__badge badge--electric"><span class="badge__dot"></span>Elektryczny</span>
+              <img src="assets/photos/lifts/gs-2032.jpg" alt="Genie GS-2032, podnośnik" loading="lazy">
+            </div>
+            <div class="lift-card__body">
+              <div class="lift-card__type">Nożycowy elektryczny</div>
+              <h4 class="lift-card__name">Genie GS-2032</h4>
+              <p class="lift-card__spec">Wys. robocza <strong>7,90 m</strong> · udźwig 363 kg · do wnętrz</p>
+              <div class="lift-card__foot">
+                <a class="btn btn--accent btn--sm spec-btn" href="assets/specs/gs-2032.pdf" data-spec-open>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6"/><path d="M9 17h6"/></svg>
+                  Specyfikacja
+                </a>
+                <a class="link-arrow" href="#kontakt">Zapytaj o dostępność
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="lift-card reveal" data-delay="1"
+                   data-spec-title="Genie GS-2669 / 3369 / 4069 RT"
+                   data-spec-cat="Podest nożycowy"
+                   data-spec-pdf="assets/specs/gs-2669rt-3369rt-4069rt.pdf"
+                   data-spec-pages="assets/specs/preview/gs-2669rt-3369rt-4069rt-1.jpg,assets/specs/preview/gs-2669rt-3369rt-4069rt-2.jpg"
+                   data-spec-photo="assets/photos/lifts/gs-2669rt-3369rt-4069rt.jpg">
+            <div class="lift-card__media" data-spec-open>
+              <span class="equip-card__badge badge--diesel"><span class="badge__dot"></span>Diesel</span>
+              <img src="assets/photos/lifts/gs-2669rt-3369rt-4069rt.jpg" alt="Genie GS-2669 / 3369 / 4069 RT, podnośnik" loading="lazy">
+            </div>
+            <div class="lift-card__body">
+              <div class="lift-card__type">Nożycowy terenowy</div>
+              <h4 class="lift-card__name">Genie GS-2669 / 3369 / 4069 RT</h4>
+              <p class="lift-card__spec">Wys. robocza <strong>9,70-14,12 m</strong> · udźwig do 680 kg · diesel 4x4</p>
+              <div class="lift-card__foot">
+                <a class="btn btn--accent btn--sm spec-btn" href="assets/specs/gs-2669rt-3369rt-4069rt.pdf" data-spec-open>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6"/><path d="M9 17h6"/></svg>
+                  Specyfikacja
+                </a>
+                <a class="link-arrow" href="#kontakt">Zapytaj o dostępność
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="lift-card reveal" data-delay="2"
+                   data-spec-title="Genie GS-2646 / GS-3246"
+                   data-spec-cat="Podest nożycowy"
+                   data-spec-pdf="assets/specs/gs-2646-3246.pdf"
+                   data-spec-pages="assets/specs/preview/gs-2646-3246-1.jpg,assets/specs/preview/gs-2646-3246-2.jpg"
+                   data-spec-photo="assets/photos/lifts/gs-2646-3246.jpg">
+            <div class="lift-card__media" data-spec-open>
+              <span class="equip-card__badge badge--electric"><span class="badge__dot"></span>Elektryczny</span>
+              <img src="assets/photos/lifts/gs-2646-3246.jpg" alt="Genie GS-2646 / GS-3246, podnośnik" loading="lazy">
+            </div>
+            <div class="lift-card__body">
+              <div class="lift-card__type">Nożycowy elektryczny</div>
+              <h4 class="lift-card__name">Genie GS-2646 / GS-3246</h4>
+              <p class="lift-card__spec">Wys. robocza <strong>9,80 / 11,75 m</strong> · udźwig 454/318 kg · do wnętrz</p>
+              <div class="lift-card__foot">
+                <a class="btn btn--accent btn--sm spec-btn" href="assets/specs/gs-2646-3246.pdf" data-spec-open>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6"/><path d="M9 17h6"/></svg>
+                  Specyfikacja
+                </a>
+                <a class="link-arrow" href="#kontakt">Zapytaj o dostępność
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="lift-card reveal" data-delay="1"
+                   data-spec-title="Genie GS-2668RT / GS-3268RT"
+                   data-spec-cat="Podest nożycowy"
+                   data-spec-pdf="assets/specs/gs-2668rt-3268rt.pdf"
+                   data-spec-pages="assets/specs/preview/gs-2668rt-3268rt-1.jpg,assets/specs/preview/gs-2668rt-3268rt-2.jpg"
+                   data-spec-photo="assets/photos/lifts/gs-2668rt-3268rt.jpg">
+            <div class="lift-card__media" data-spec-open>
+              <span class="equip-card__badge badge--diesel"><span class="badge__dot"></span>Diesel</span>
+              <img src="assets/photos/lifts/gs-2668rt-3268rt.jpg" alt="Genie GS-2668RT / GS-3268RT, podnośnik" loading="lazy">
+            </div>
+            <div class="lift-card__body">
+              <div class="lift-card__type">Nożycowy terenowy</div>
+              <h4 class="lift-card__name">Genie GS-2668RT / GS-3268RT</h4>
+              <p class="lift-card__spec">Wys. robocza <strong>9,92 / 11,75 m</strong> · udźwig 567/454 kg · diesel 4x4</p>
+              <div class="lift-card__foot">
+                <a class="btn btn--accent btn--sm spec-btn" href="assets/specs/gs-2668rt-3268rt.pdf" data-spec-open>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6"/><path d="M9 17h6"/></svg>
+                  Specyfikacja
+                </a>
+                <a class="link-arrow" href="#kontakt">Zapytaj o dostępność
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="lift-card reveal" data-delay="2"
+                   data-spec-title="Genie GS-3390RT / GS-4390RT"
+                   data-spec-cat="Podest nożycowy"
+                   data-spec-pdf="assets/specs/gs-3390rt-4390rt.pdf"
+                   data-spec-pages="assets/specs/preview/gs-3390rt-4390rt-1.jpg,assets/specs/preview/gs-3390rt-4390rt-2.jpg"
+                   data-spec-photo="assets/photos/lifts/gs-3390rt-4390rt.jpg">
+            <div class="lift-card__media" data-spec-open>
+              <span class="equip-card__badge badge--diesel"><span class="badge__dot"></span>Diesel</span>
+              <img src="assets/photos/lifts/gs-3390rt-4390rt.jpg" alt="Genie GS-3390RT / GS-4390RT, podnośnik" loading="lazy">
+            </div>
+            <div class="lift-card__body">
+              <div class="lift-card__type">Nożycowy terenowy</div>
+              <h4 class="lift-card__name">Genie GS-3390RT / GS-4390RT</h4>
+              <p class="lift-card__spec">Wys. robocza <strong>11,94 / 14,75 m</strong> · udźwig 1134/680 kg · diesel 4x4</p>
+              <div class="lift-card__foot">
+                <a class="btn btn--accent btn--sm spec-btn" href="assets/specs/gs-3390rt-4390rt.pdf" data-spec-open>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6"/><path d="M9 17h6"/></svg>
+                  Specyfikacja
+                </a>
+                <a class="link-arrow" href="#kontakt">Zapytaj o dostępność
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="lift-card reveal" data-delay="1"
+                   data-spec-title="Genie GS-4047"
+                   data-spec-cat="Podest nożycowy"
+                   data-spec-pdf="assets/specs/gs-4047.pdf"
+                   data-spec-pages="assets/specs/preview/gs-4047-1.jpg,assets/specs/preview/gs-4047-2.jpg"
+                   data-spec-photo="assets/photos/lifts/gs-4047.jpg">
+            <div class="lift-card__media" data-spec-open>
+              <span class="equip-card__badge badge--electric"><span class="badge__dot"></span>Elektryczny</span>
+              <img src="assets/photos/lifts/gs-4047.jpg" alt="Genie GS-4047, podnośnik" loading="lazy">
+            </div>
+            <div class="lift-card__body">
+              <div class="lift-card__type">Nożycowy elektryczny</div>
+              <h4 class="lift-card__name">Genie GS-4047</h4>
+              <p class="lift-card__spec">Wys. robocza <strong>13,70 m</strong> · udźwig 350 kg · do wnętrz</p>
+              <div class="lift-card__foot">
+                <a class="btn btn--accent btn--sm spec-btn" href="assets/specs/gs-4047.pdf" data-spec-open>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6"/><path d="M9 17h6"/></svg>
+                  Specyfikacja
+                </a>
+                <a class="link-arrow" href="#kontakt">Zapytaj o dostępność
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="lift-card reveal" data-delay="2"
+                   data-spec-title="Genie GS-5390RT"
+                   data-spec-cat="Podest nożycowy"
+                   data-spec-pdf="assets/specs/gs-5390rt.pdf"
+                   data-spec-pages="assets/specs/preview/gs-5390rt-1.jpg,assets/specs/preview/gs-5390rt-2.jpg"
+                   data-spec-photo="assets/photos/lifts/gs-5390rt.jpg">
+            <div class="lift-card__media" data-spec-open>
+              <span class="equip-card__badge badge--diesel"><span class="badge__dot"></span>Diesel</span>
+              <img src="assets/photos/lifts/gs-5390rt.jpg" alt="Genie GS-5390RT, podnośnik" loading="lazy">
+            </div>
+            <div class="lift-card__body">
+              <div class="lift-card__type">Nożycowy terenowy</div>
+              <h4 class="lift-card__name">Genie GS-5390RT</h4>
+              <p class="lift-card__spec">Wys. robocza <strong>17,95 m</strong> · udźwig 680 kg · diesel 4x4</p>
+              <div class="lift-card__foot">
+                <a class="btn btn--accent btn--sm spec-btn" href="assets/specs/gs-5390rt.pdf" data-spec-open>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6"/><path d="M9 17h6"/></svg>
+                  Specyfikacja
+                </a>
+                <a class="link-arrow" href="#kontakt">Zapytaj o dostępność
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Kategoria 04 -->
+      <div class="cat reveal">
+        <div class="cat__head">
+          <div class="cat__title">
+            <span class="cat__index">04</span>
+            <h3 class="h-md">Ładowarki teleskopowe i obrotowe</h3>
+          </div>
+          <span class="cat__count">1 model</span>
+        </div>
+        <div class="lift-grid lift-grid--solo">
+          <article class="lift-card reveal" data-delay="1"
+                   data-spec-title="Manitou MT 1840 ST5"
+                   data-spec-cat="Ładowarka teleskopowa i obrotowa"
+                   data-spec-pdf="assets/specs/mt-1840-st5.pdf"
+                   data-spec-pages="assets/specs/preview/mt-1840-st5-1.jpg,assets/specs/preview/mt-1840-st5-2.jpg"
+                   data-spec-photo="assets/photos/lifts/mt-1840-st5.jpg">
+            <div class="lift-card__media" data-spec-open>
+              <span class="equip-card__badge badge--diesel"><span class="badge__dot"></span>Diesel</span>
+              <img src="assets/photos/lifts/mt-1840-st5.jpg" alt="Manitou MT 1840 ST5, podnośnik" loading="lazy">
+            </div>
+            <div class="lift-card__body">
+              <div class="lift-card__type">Ładowarka teleskopowa i obrotowa</div>
+              <h4 class="lift-card__name">Manitou MT 1840 ST5</h4>
+              <p class="lift-card__spec">Udźwig <strong>4000 kg</strong> · wys. podnoszenia 17,55 m · wysięg 13,08 m</p>
+              <div class="lift-card__foot">
+                <a class="btn btn--accent btn--sm spec-btn" href="assets/specs/mt-1840-st5.pdf" data-spec-open>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6"/><path d="M9 17h6"/></svg>
+                  Specyfikacja
+                </a>
+                <a class="link-arrow" href="#kontakt">Zapytaj o dostępność
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
                 </a>
               </div>
@@ -559,6 +970,31 @@
   </div>
 </footer>
 
-<script src="js/main.js"></script>
+  <!-- Modal specyfikacji -->
+  <div class="spec-modal" id="specModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="specModalTitle">
+    <div class="spec-modal__backdrop" data-spec-close></div>
+    <div class="spec-modal__panel" role="document">
+      <header class="spec-modal__head">
+        <div class="spec-modal__heading">
+          <span class="spec-modal__eyebrow" id="specModalEyebrow">Specyfikacja</span>
+          <h3 class="spec-modal__title" id="specModalTitle"></h3>
+        </div>
+        <button class="spec-modal__close" type="button" aria-label="Zamknij" data-spec-close>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+      </header>
+      <div class="spec-modal__body" id="specModalBody">
+        <div class="spec-modal__pages" id="specModalPages"></div>
+      </div>
+      <footer class="spec-modal__foot">
+        <a class="btn btn--accent btn--lg spec-modal__download" id="specModalDownload" href="#" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+          Pobierz specyfikację (PDF)
+        </a>
+      </footer>
+    </div>
+  </div>
+
+  <script src="js/main.js?v=2"></script>
 </body>
 </html>
