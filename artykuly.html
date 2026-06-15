@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/styles.css?v=6">
 </head>
 <body>
 
@@ -42,22 +42,9 @@
 <header class="site-header">
   <nav class="container nav" aria-label="Główna nawigacja">
     <a href="index.html" class="logo" aria-label="4Rent · strona główna">
-      <svg class="logo__mark" viewBox="0 0 96 96" aria-hidden="true">
-        <g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" opacity=".9">
-          <line x1="21" y1="29" x2="75" y2="29"/><line x1="21" y1="29" x2="21" y2="47"/><line x1="75" y1="29" x2="75" y2="47"/>
-        </g>
-        <text x="48" y="46" text-anchor="middle" font-family="'Saira Condensed','Arial Narrow',sans-serif" font-weight="800" font-size="23" fill="currentColor">4R</text>
-        <rect x="17" y="47" width="62" height="7" rx="2" fill="currentColor"/>
-        <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" opacity=".6">
-          <line x1="30" y1="55" x2="66" y2="68"/><line x1="66" y1="55" x2="30" y2="68"/><line x1="30" y1="63" x2="66" y2="76"/><line x1="66" y1="63" x2="30" y2="76"/>
-        </g>
-        <g fill="#2E90E5"><circle cx="48" cy="61.5" r="2.1"/><circle cx="48" cy="69.5" r="2.1"/></g>
-        <rect x="24" y="75" width="48" height="7" rx="2" fill="currentColor"/>
-        <g fill="currentColor"><circle cx="34" cy="86" r="7"/><circle cx="62" cy="86" r="7"/></g>
-      </svg>
+      <img class="logo__img" src="assets/logo-4rent-white.png" alt="4Rent Wypożyczalnia Maszyn Budowlanych" width="60" height="50">
       <span class="logo__text">
         <span class="logo__name"><b>4</b>RENT</span>
-        <span class="logo__sub">Wypożyczalnia maszyn · Śląsk</span>
       </span>
     </a>
 
@@ -95,42 +82,350 @@
   <!-- ====================== LISTA ARTYKUŁÓW ====================== -->
   <section class="section bg-concrete">
     <div class="container container--narrow">
-
       <!-- ===================================================================
-           ARTYKUŁY  (wszystkie na tej jednej stronie)
-           Każdy artykuł = jeden blok <article class="post"> ... </article>.
-           ABY DODAĆ KOLEJNY ARTYKUŁ:
-             1. Skopiuj CAŁY blok <article class="post"> poniżej.
-             2. Wklej go pod spodem (nad komentarzem "KONIEC listy").
-             3. Zastąp tytuł, kategorię i datę swoimi.
-             4. Treść tekstową od Teresy wklej w środku <div class="article__body">
-                (akapity w <p>...</p>, śródtytuły w <h3>...</h3>, listy w <ul><li>).
+           ARTYKUŁY (wszystkie na tej jednej stronie).
+           Aby dodać kolejny wpis: skopiuj jeden blok <article class="post"> ... </article>,
+           wklej go w tym miejscu i wypełnij treścią, a zdjęcie wrzuć do assets/articles/.
       ==================================================================== -->
 
-      <article class="post">
+            <nav class="toc reveal" aria-label="Spis artykułów">
+        <span class="kicker">Spis treści</span>
+        <h2 class="toc__title">W tym poradniku</h2>
+        <ol class="toc__grid">
+        <li><a class="toc__item" href="#artykul-1">
+          <span class="toc__num">01</span>
+          <span class="toc__body">
+            <span class="toc__cat">Poradnik</span>
+            <span class="toc__name">Wynajem podestów ruchomych: jak wybrać odpowiedni sprzęt do pracy na wysokości?</span>
+          </span>
+          <span class="toc__arrow" aria-hidden="true">&#8594;</span>
+        </a></li>
+        <li><a class="toc__item" href="#artykul-2">
+          <span class="toc__num">02</span>
+          <span class="toc__body">
+            <span class="toc__cat">Zastosowania</span>
+            <span class="toc__name">Najczęstsze zastosowania podnośników koszowych: gdzie sprawdzają się najlepiej?</span>
+          </span>
+          <span class="toc__arrow" aria-hidden="true">&#8594;</span>
+        </a></li>
+        <li><a class="toc__item" href="#artykul-3">
+          <span class="toc__num">03</span>
+          <span class="toc__body">
+            <span class="toc__cat">Poradnik</span>
+            <span class="toc__name">Podesty nożycowe czy przegubowe? Poradnik dla firm</span>
+          </span>
+          <span class="toc__arrow" aria-hidden="true">&#8594;</span>
+        </a></li>
+        <li><a class="toc__item" href="#artykul-4">
+          <span class="toc__num">04</span>
+          <span class="toc__body">
+            <span class="toc__cat">Bezpieczeństwo</span>
+            <span class="toc__name">Bezpieczna praca na wysokości: wymagania UDT dla operatorów podestów ruchomych</span>
+          </span>
+          <span class="toc__arrow" aria-hidden="true">&#8594;</span>
+        </a></li>
+        <li><a class="toc__item" href="#artykul-5">
+          <span class="toc__num">05</span>
+          <span class="toc__body">
+            <span class="toc__cat">Bezpieczeństwo</span>
+            <span class="toc__name">Przygotowanie terenu pod pracę podestu ruchomego: poradnik dla kierowników budowy</span>
+          </span>
+          <span class="toc__arrow" aria-hidden="true">&#8594;</span>
+        </a></li>
+        <li><a class="toc__item" href="#artykul-6">
+          <span class="toc__num">06</span>
+          <span class="toc__body">
+            <span class="toc__cat">Eksploatacja</span>
+            <span class="toc__name">Dbanie o akumulatory trakcyjne: jak wydłużyć ich żywotność i uniknąć kosztownych awarii?</span>
+          </span>
+          <span class="toc__arrow" aria-hidden="true">&#8594;</span>
+        </a></li>
+        </ol>
+      </nav>
+
+      <article class="post" id="artykul-1">
         <header class="post__head">
-          <span class="post__cat">Kategoria (np. Podesty ruchome)</span>
-          <h2 class="post__title">Tytuł artykułu (przykład)</h2>
-          <div class="post__meta"><span>4Rent</span><span aria-hidden="true">•</span><span>Data publikacji</span></div>
+          <span class="post__cat">Poradnik</span>
+          <h2 class="post__title">Wynajem podestów ruchomych: jak wybrać odpowiedni sprzęt do pracy na wysokości?</h2>
+          <div class="post__meta"><span>4Rent</span><span aria-hidden="true">•</span><span>Czerwiec 2026</span></div>
         </header>
+        <img class="post__cover" src="assets/articles/artykul-1.jpg" alt="Wynajem podestów ruchomych" loading="lazy">
         <div class="article__body">
-          <p>To jest przykładowy układ artykułu, który pokazuje, jak będzie wyglądał gotowy wpis na stronie. Zastąp ten tekst treścią artykułu od Teresy.</p>
-          <p>Wstęp: 2-3 zdania streszczające, czego dotyczy artykuł. Warto używać słów, których klienci szukają w internecie, np. „wynajem podestu nożycowego" albo „ładowarka teleskopowa Śląsk".</p>
-
-          <h3>Śródtytuł w artykule</h3>
-          <p>Akapit treści. Tekst można dzielić na sekcje, dodawać wypunktowania i wyróżnienia.</p>
-          <ul>
-            <li>Najważniejsza informacja w punkcie.</li>
-            <li>Kolejny przydatny punkt.</li>
-          </ul>
-
-          <h3>Kolejny śródtytuł</h3>
-          <p>Dalsza treść artykułu. Na końcu warto dodać krótką zachętę do kontaktu.</p>
-          <blockquote>Najważniejszą myśl można wyróżnić w takiej ramce.</blockquote>
+        <p>Prace na wysokości wymagają nie tylko odpowiednich umiejętności, ale również właściwie dobranego sprzętu. Wybór odpowiedniego podestu ruchomego ma kluczowe znaczenie dla bezpieczeństwa, efektywności oraz kosztów realizacji zadania. W tym artykule podpowiadamy, na co zwrócić uwagę podczas wynajmu podestu ruchomego i jaki rodzaj urządzenia sprawdzi się w konkretnych zastosowaniach.</p>
+        <h3>Dlaczego warto wynająć podest ruchomy?</h3>
+        <p>Zakup specjalistycznego sprzętu wiąże się z dużymi kosztami oraz koniecznością jego serwisowania i transportu. Dlatego wiele firm budowlanych, instalacyjnych czy przemysłowych decyduje się na wynajem podestów ruchomych.</p>
+        <p>Korzyści z wynajmu:</p>
+        <ul><li>brak kosztów zakupu i utrzymania sprzętu,</li><li>dostęp do nowoczesnych i regularnie serwisowanych maszyn,</li><li>możliwość wyboru sprzętu dopasowanego do konkretnego zadania,</li><li>oszczędność czasu i pieniędzy.</li></ul>
+        <h3>Jaki podest wybrać?</h3>
+        <h3>Podesty nożycowe</h3>
+        <p>Podesty nożycowe doskonale sprawdzają się podczas prac wykonywanych pionowo nad miejscem ustawienia maszyny. Są często wykorzystywane podczas:</p>
+        <ul><li>prac magazynowych,</li><li>montażu instalacji,</li><li>prac wykończeniowych,</li><li>konserwacji obiektów przemysłowych.</li></ul>
+        <p>Ich zaletą jest duża platforma robocza oraz stabilność pracy.</p>
+        <h3>Podesty przegubowe</h3>
+        <p>Jeżeli konieczne jest ominięcie przeszkód, najlepszym rozwiązaniem są podesty przegubowe. Dzięki specjalnej konstrukcji ramienia umożliwiają dotarcie do trudno dostępnych miejsc.</p>
+        <p>Najczęstsze zastosowania:</p>
+        <ul><li>prace elewacyjne,</li><li>montaż reklam i banerów,</li><li>konserwacja hal i obiektów przemysłowych,</li><li>przycinanie drzew.</li></ul>
+        <h3>Podesty teleskopowe</h3>
+        <p>Podesty teleskopowe zapewniają bardzo duży zasięg roboczy i są wykorzystywane przy pracach wymagających dotarcia na znaczne wysokości.</p>
+        <p>Sprawdzają się między innymi przy:</p>
+        <ul><li>budowie obiektów przemysłowych,</li><li>pracach konstrukcyjnych,</li><li>montażu elementów na dużych wysokościach.</li></ul>
+        <h3>Na co zwrócić uwagę przy wyborze podestu?</h3>
+        <h3>Wysokość robocza</h3>
+        <p>Pierwszym krokiem jest określenie wysokości, na jakiej będą prowadzone prace. Warto pamiętać, że wysokość robocza jest większa od wysokości platformy i uwzględnia zasięg operatora.</p>
+        <h3>Warunki pracy</h3>
+        <p>Znaczenie ma również miejsce wykonywania prac:</p>
+        <ul><li>wewnątrz budynków najlepiej sprawdzają się elektryczne podesty nożycowe,</li><li>na zewnątrz warto wybierać maszyny terenowe z napędem spalinowym lub hybrydowym.</li></ul>
+        <h3>Rodzaj podłoża</h3>
+        <p>Nierówny teren, błoto czy grząski grunt wymagają zastosowania maszyn o odpowiednim napędzie i stabilności.</p>
+        <h3>Udźwig platformy</h3>
+        <p>Należy uwzględnić liczbę pracowników oraz ciężar narzędzi i materiałów, które będą znajdować się na platformie.</p>
+        <h3>Bezpieczeństwo przede wszystkim</h3>
+        <p>Praca na wysokości wymaga przestrzegania zasad bezpieczeństwa. Przed rozpoczęciem pracy należy:</p>
+        <ul><li>sprawdzić stan techniczny urządzenia,</li><li>zapoznać się z instrukcją obsługi,</li><li>stosować środki ochrony indywidualnej,</li><li>upewnić się, że operator posiada wymagane uprawnienia.</li></ul>
+        <h3>Potrzebujesz pomocy w wyborze sprzętu?</h3>
+        <p>Nie wiesz, jaki podest ruchomy będzie najlepszy do Twojego zadania? Skontaktuj się z naszym zespołem. Pomożemy dobrać odpowiednią maszynę do rodzaju wykonywanych prac, warunków terenowych oraz wymaganej wysokości roboczej.</p>
+        <p>Oferujemy wynajem nowoczesnych podestów ruchomych dla klientów z Rybnika, Wodzisławia Śląskiego, Raciborza, Żor, Jastrzębia-Zdroju oraz całego województwa śląskiego.</p>
         </div>
       </article>
 
-      <!-- KONIEC listy artykułów. Nowe wpisy dodawaj nad tą linią (kopiując blok <article class="post"> powyżej). -->
+      <article class="post" id="artykul-2">
+        <header class="post__head">
+          <span class="post__cat">Zastosowania</span>
+          <h2 class="post__title">Najczęstsze zastosowania podnośników koszowych: gdzie sprawdzają się najlepiej?</h2>
+          <div class="post__meta"><span>4Rent</span><span aria-hidden="true">•</span><span>Czerwiec 2026</span></div>
+        </header>
+        <img class="post__cover" src="assets/articles/artykul-2.jpg" alt="Najczęstsze zastosowania podnośników koszowych" loading="lazy">
+        <div class="article__body">
+        <p>Podnośniki koszowe stały się nieodłącznym elementem wielu prac wykonywanych na wysokości. Dzięki swojej wszechstronności, bezpieczeństwu oraz możliwości dotarcia do trudno dostępnych miejsc znajdują zastosowanie w budownictwie, przemyśle, usługach komunalnych i wielu innych branżach. Sprawdź, w jakich sytuacjach podnośniki koszowe są wykorzystywane najczęściej.</p>
+        <h3>Prace budowlane i elewacyjne</h3>
+        <p>Jednym z najpopularniejszych zastosowań podnośników koszowych są prace budowlane oraz remontowe. Umożliwiają one bezpieczne wykonywanie zadań na wysokości bez konieczności montowania czasochłonnych rusztowań.</p>
+        <p>Podnośniki wykorzystywane są między innymi do:</p>
+        <ul><li>malowania elewacji,</li><li>ocieplania budynków,</li><li>montażu rynien,</li><li>napraw dachów,</li><li>prac wykończeniowych.</li></ul>
+        <p>Dzięki możliwości szybkiego przemieszczania operatorzy mogą wykonywać zadania znacznie sprawniej niż przy użyciu tradycyjnych rusztowań.</p>
+        <h3>Montaż reklam i banerów</h3>
+        <p>Firmy reklamowe często korzystają z podnośników koszowych podczas montażu:</p>
+        <ul><li>billboardów,</li><li>banerów reklamowych,</li><li>kasetonów świetlnych,</li><li>szyldów i oznakowania budynków.</li></ul>
+        <p>Precyzyjne ustawienie kosza roboczego pozwala bezpiecznie wykonywać nawet bardzo wymagające montaże.</p>
+        <h3>Prace elektryczne i instalacyjne</h3>
+        <p>Podnośniki koszowe są niezastąpione przy:</p>
+        <ul><li>montażu oświetlenia ulicznego,</li><li>naprawach sieci energetycznych,</li><li>instalacji monitoringu,</li><li>montażu kamer i systemów alarmowych,</li><li>pracach telekomunikacyjnych.</li></ul>
+        <p>Dzięki dużemu zasięgowi operatorzy mogą szybko dotrzeć do miejsca wykonywania prac bez konieczności stosowania dodatkowych konstrukcji.</p>
+        <h3>Przycinanie i pielęgnacja drzew</h3>
+        <p>Firmy zajmujące się utrzymaniem terenów zielonych regularnie wykorzystują podnośniki koszowe do:</p>
+        <ul><li>przycinania gałęzi,</li><li>usuwania suchych konarów,</li><li>pielęgnacji wysokich drzew,</li><li>wycinki drzew w trudno dostępnych miejscach.</li></ul>
+        <p>Podnośnik pozwala bezpiecznie dotrzeć do korony drzewa oraz znacząco zwiększa komfort pracy arborystów.</p>
+        <h3>Prace przemysłowe i magazynowe</h3>
+        <p>W zakładach produkcyjnych oraz centrach logistycznych podnośniki wykorzystywane są do:</p>
+        <ul><li>konserwacji instalacji,</li><li>serwisowania urządzeń,</li><li>montażu konstrukcji stalowych,</li><li>wymiany oświetlenia halowego,</li><li>prac porządkowych na wysokości.</li></ul>
+        <p>W zamkniętych obiektach szczególnie dobrze sprawdzają się elektryczne podesty nożycowe, które nie emitują spalin.</p>
+        <h3>Mycie i konserwacja obiektów</h3>
+        <p>Podnośniki koszowe są często wykorzystywane podczas:</p>
+        <ul><li>mycia przeszkleń,</li><li>czyszczenia elewacji,</li><li>konserwacji fasad,</li><li>prac renowacyjnych.</li></ul>
+        <p>Pozwalają dotrzeć do trudno dostępnych miejsc przy zachowaniu wysokiego poziomu bezpieczeństwa.</p>
+        <h3>Montaż konstrukcji i instalacji przemysłowych</h3>
+        <p>Przy budowie hal, magazynów oraz obiektów przemysłowych podnośniki umożliwiają:</p>
+        <ul><li>montaż konstrukcji stalowych,</li><li>instalację systemów wentylacyjnych,</li><li>montaż instalacji przeciwpożarowych,</li><li>prace serwisowe na dużych wysokościach.</li></ul>
+        <h3>Dlaczego warto wynająć podnośnik koszowy?</h3>
+        <p>Wynajem podnośnika koszowego pozwala ograniczyć koszty zakupu i utrzymania sprzętu, a jednocześnie zapewnia dostęp do nowoczesnych, regularnie serwisowanych maszyn. To rozwiązanie wygodne zarówno dla dużych przedsiębiorstw, jak i klientów indywidualnych realizujących jednorazowe prace.</p>
+        <h3>Potrzebujesz podnośnika koszowego?</h3>
+        <p>Nasza firma oferuje wynajem nowoczesnych podnośników koszowych oraz podestów ruchomych dla klientów z Rybnika, Wodzisławia Śląskiego, Raciborza, Żor, Jastrzębia-Zdroju i całego województwa śląskiego. Pomożemy dobrać odpowiedni sprzęt do rodzaju wykonywanych prac oraz warunków terenowych.</p>
+        <p>Skontaktuj się z nami i wybierz rozwiązanie dopasowane do Twoich potrzeb.</p>
+        </div>
+      </article>
+
+      <article class="post" id="artykul-3">
+        <header class="post__head">
+          <span class="post__cat">Poradnik</span>
+          <h2 class="post__title">Podesty nożycowe czy przegubowe? Poradnik dla firm</h2>
+          <div class="post__meta"><span>4Rent</span><span aria-hidden="true">•</span><span>Czerwiec 2026</span></div>
+        </header>
+        <img class="post__cover" src="assets/articles/artykul-3.jpg" alt="Podesty nożycowe czy przegubowe? Poradnik dla firm" loading="lazy">
+        <div class="article__body">
+        <p>Wybór odpowiedniego sprzętu do pracy na wysokości ma kluczowe znaczenie dla bezpieczeństwa, wydajności oraz kosztów realizacji inwestycji. Wśród najczęściej wynajmowanych maszyn znajdują się podesty nożycowe oraz podesty przegubowe. Choć oba urządzenia służą do wykonywania prac na wysokości, ich konstrukcja i zastosowanie znacząco się różnią.</p>
+        <p>Który podest sprawdzi się lepiej w Twojej firmie? Odpowiedź zależy od rodzaju wykonywanych prac, warunków terenowych oraz miejsca realizacji zlecenia.</p>
+        <h3>Podest nożycowy, kiedy warto go wybrać?</h3>
+        <p>Podesty nożycowe unoszą platformę pionowo do góry za pomocą charakterystycznego mechanizmu nożycowego. To rozwiązanie szczególnie cenione w miejscach, gdzie prace wykonywane są bezpośrednio nad miejscem ustawienia maszyny.</p>
+        <h3>Zalety podestów nożycowych</h3>
+        <ul><li>duża powierzchnia platformy roboczej,</li><li>możliwość pracy kilku osób jednocześnie,</li><li>wysoki udźwig,</li><li>stabilna konstrukcja,</li><li>łatwa obsługa,</li><li>korzystniejsza cena wynajmu.</li></ul>
+        <h3>Zastosowanie podestów nożycowych</h3>
+        <p>Podesty nożycowe doskonale sprawdzają się podczas:</p>
+        <ul><li>montażu instalacji elektrycznych,</li><li>prac magazynowych,</li><li>montażu systemów wentylacyjnych,</li><li>konserwacji obiektów przemysłowych,</li><li>prac wykończeniowych,</li><li>montażu oświetlenia w halach.</li></ul>
+        <p>Szczególnie często wykorzystywane są w magazynach, halach produkcyjnych oraz centrach logistycznych.</p>
+        <h3>Podest przegubowy, rozwiązanie do trudnych zadań</h3>
+        <p>Podesty przegubowe wyposażone są w wielosegmentowe ramię, które umożliwia nie tylko podnoszenie operatora na wysokość, ale także wykonywanie ruchów bocznych i omijanie przeszkód.</p>
+        <p>Dzięki temu można dotrzeć do miejsc niedostępnych dla podestów nożycowych.</p>
+        <h3>Zalety podestów przegubowych</h3>
+        <ul><li>duży zasięg boczny,</li><li>możliwość pracy ponad przeszkodami,</li><li>wysoka elastyczność zastosowań,</li><li>dostęp do trudno dostępnych miejsc,</li><li>sprawdzają się zarówno na budowach, jak i podczas prac serwisowych.</li></ul>
+        <h3>Zastosowanie podestów przegubowych</h3>
+        <p>Podesty przegubowe najczęściej wykorzystywane są przy:</p>
+        <ul><li>pracach elewacyjnych,</li><li>montażu reklam i billboardów,</li><li>konserwacji budynków,</li><li>myciu przeszkleń,</li><li>przycinaniu drzew,</li><li>pracach instalacyjnych na zewnątrz budynków,</li><li>serwisowaniu infrastruktury przemysłowej.</li></ul>
+        <h3>Najważniejsze różnice między podestem nożycowym a przegubowym</h3>
+        <h3>Zasięg pracy</h3>
+        <p>Podest nożycowy porusza się głównie w pionie.</p>
+        <p>Podest przegubowy umożliwia pracę zarówno w pionie, jak i w poziomie, co pozwala omijać przeszkody i docierać do miejsc znajdujących się poza obrysem maszyny.</p>
+        <h3>Powierzchnia platformy</h3>
+        <p>Podesty nożycowe oferują większą platformę roboczą oraz większy udźwig.</p>
+        <p>Podesty przegubowe posiadają mniejsze kosze, ale zapewniają znacznie większą swobodę ruchu.</p>
+        <h3>Warunki terenowe</h3>
+        <p>Podesty nożycowe najlepiej sprawdzają się na równych nawierzchniach.</p>
+        <p>Podesty przegubowe są często wykorzystywane na placach budowy i w bardziej wymagającym terenie.</p>
+        <h3>Koszt wynajmu</h3>
+        <p>W większości przypadków wynajem podestu nożycowego jest tańszy niż wynajem podestu przegubowego.</p>
+        <p>Jednak w sytuacjach wymagających dużego zasięgu bocznego wybór podestu przegubowego może znacząco skrócić czas realizacji prac, a tym samym obniżyć całkowity koszt inwestycji.</p>
+        <h3>Jak dobrać odpowiedni podest?</h3>
+        <p>Przed wynajmem warto określić:</p>
+        <ul><li>wysokość roboczą,</li><li>wymagany zasięg boczny,</li><li>rodzaj podłoża,</li><li>liczbę pracowników na platformie,</li><li>wagę transportowanych narzędzi i materiałów,</li><li>miejsce wykonywania prac (wewnątrz lub na zewnątrz budynku).</li></ul>
+        <p>Dobór odpowiedniej maszyny pozwala zwiększyć bezpieczeństwo pracy i uniknąć niepotrzebnych kosztów.</p>
+        <h3>Potrzebujesz pomocy?</h3>
+        <p>Jeśli nie jesteś pewien, który podest będzie najlepszy do Twojego projektu, skontaktuj się z naszym zespołem. Doradzimy odpowiednie rozwiązanie i pomożemy dobrać sprzęt dopasowany do rodzaju wykonywanych prac.</p>
+        <p>Oferujemy wynajem podestów nożycowych oraz przegubowych dla klientów z Rybnika, Wodzisławia Śląskiego, Raciborza, Żor, Jastrzębia-Zdroju oraz całego województwa śląskiego. Dysponujemy nowoczesną flotą maszyn gotowych do pracy zarówno wewnątrz budynków, jak i na wymagających placach budowy.</p>
+        </div>
+      </article>
+
+      <article class="post" id="artykul-4">
+        <header class="post__head">
+          <span class="post__cat">Bezpieczeństwo</span>
+          <h2 class="post__title">Bezpieczna praca na wysokości: wymagania UDT dla operatorów podestów ruchomych</h2>
+          <div class="post__meta"><span>4Rent</span><span aria-hidden="true">•</span><span>Czerwiec 2026</span></div>
+        </header>
+        <img class="post__cover" src="assets/articles/artykul-4.jpg" alt="Bezpieczna praca na wysokości" loading="lazy">
+        <div class="article__body">
+        <p>Prace wykonywane na wysokości należą do najbardziej wymagających i jednocześnie najbardziej niebezpiecznych zadań realizowanych na budowach, w zakładach przemysłowych oraz podczas prac serwisowych. Dlatego tak ważne jest przestrzeganie przepisów bezpieczeństwa oraz posiadanie odpowiednich kwalifikacji do obsługi podestów ruchomych.</p>
+        <p>W tym artykule wyjaśniamy, jakie wymagania należy spełnić, aby legalnie i bezpiecznie obsługiwać podesty ruchome oraz dlaczego uprawnienia UDT mają tak duże znaczenie.</p>
+        <h3>Czym jest UDT?</h3>
+        <p>UDT, czyli Urząd Dozoru Technicznego, to instytucja odpowiedzialna za nadzór nad urządzeniami technicznymi wykorzystywanymi w Polsce. Do takich urządzeń należą między innymi:</p>
+        <ul><li>podesty ruchome przejezdne,</li><li>podnośniki koszowe,</li><li>wózki widłowe,</li><li>suwnice,</li><li>żurawie.</li></ul>
+        <p>Każdy podest ruchomy wykorzystywany do pracy powinien posiadać aktualną decyzję UDT dopuszczającą urządzenie do eksploatacji.</p>
+        <h3>Czy operator podestu musi posiadać uprawnienia?</h3>
+        <p>Tak. Obsługa większości podestów ruchomych wymaga posiadania odpowiednich kwalifikacji potwierdzonych egzaminem przed komisją UDT.</p>
+        <p>Uprawnienia są wymagane zarówno dla osób pracujących na budowach, jak i wykonujących prace instalacyjne, konserwacyjne czy serwisowe.</p>
+        <p>Brak wymaganych uprawnień może skutkować:</p>
+        <ul><li>mandatem,</li><li>konsekwencjami dla pracodawcy,</li><li>problemami z ubezpieczeniem w razie wypadku,</li><li>zatrzymaniem prac przez odpowiednie służby kontrolne.</li></ul>
+        <h3>Jak zdobyć uprawnienia UDT?</h3>
+        <p>Aby uzyskać kwalifikacje operatora podestów ruchomych należy:</p>
+        <ul><li>Ukończyć szkolenie teoretyczne i praktyczne.</li><li>Złożyć wniosek o egzamin UDT.</li><li>Zdać egzamin teoretyczny.</li><li>Zdać egzamin praktyczny.</li></ul>
+        <p>Po pozytywnym wyniku egzaminu operator otrzymuje zaświadczenie kwalifikacyjne uprawniające do obsługi określonych urządzeń.</p>
+        <h3>Jakie obowiązki ma operator?</h3>
+        <p>Posiadanie uprawnień to dopiero początek. Operator podestu ruchomego odpowiada za bezpieczne użytkowanie urządzenia.</p>
+        <p>Przed rozpoczęciem pracy powinien:</p>
+        <ul><li>sprawdzić stan techniczny maszyny,</li><li>ocenić warunki terenowe,</li><li>upewnić się, że urządzenie posiada aktualne badania UDT,</li><li>sprawdzić poziom naładowania lub paliwa,</li><li>zapoznać się z instrukcją obsługi.</li></ul>
+        <p>W trakcie pracy operator powinien przestrzegać wszystkich zasad bezpieczeństwa oraz stosować środki ochrony indywidualnej.</p>
+        <h3>Najważniejsze zasady bezpiecznej pracy na wysokości</h3>
+        <h3>Sprawdzenie miejsca pracy</h3>
+        <p>Przed ustawieniem podestu należy zweryfikować:</p>
+        <ul><li>nośność podłoża,</li><li>obecność przeszkód,</li><li>przebieg linii energetycznych,</li><li>warunki pogodowe.</li></ul>
+        <p>Nieodpowiednio przygotowane stanowisko pracy jest jedną z najczęstszych przyczyn niebezpiecznych sytuacji.</p>
+        <h3>Stosowanie środków ochrony indywidualnej</h3>
+        <p>W zależności od rodzaju wykonywanych prac konieczne może być stosowanie:</p>
+        <ul><li>kasków ochronnych,</li><li>szelek bezpieczeństwa,</li><li>linek zabezpieczających,</li><li>odzieży ostrzegawczej.</li></ul>
+        <h3>Przestrzeganie dopuszczalnego udźwigu</h3>
+        <p>Każdy podest posiada określony maksymalny udźwig. Przekroczenie tej wartości może prowadzić do utraty stabilności urządzenia i zagrożenia dla operatora.</p>
+        <h3>Zakaz samowolnych przeróbek</h3>
+        <p>Nie wolno modyfikować konstrukcji podestu ani stosować dodatkowych elementów zwiększających wysokość pracy, takich jak drabiny ustawiane na platformie.</p>
+        <h3>Dlaczego warto wynajmować sprawdzony sprzęt?</h3>
+        <p>Wynajmując podesty ruchome od profesjonalnej firmy, klient zyskuje pewność, że urządzenia są regularnie serwisowane, posiadają aktualne badania UDT i są gotowe do bezpiecznej pracy.</p>
+        <p>To nie tylko wygoda, ale przede wszystkim gwarancja bezpieczeństwa operatorów oraz zgodności z obowiązującymi przepisami.</p>
+        <h3>Wynajem podestów ruchomych na Śląsku</h3>
+        <p>Nasza firma oferuje wynajem nowoczesnych podestów nożycowych, przegubowych oraz teleskopowych. Wszystkie maszyny posiadają aktualne badania techniczne i są regularnie kontrolowane pod kątem bezpieczeństwa.</p>
+        <p>Obsługujemy klientów z Rybnika, Wodzisławia Śląskiego, Raciborza, Żor, Jastrzębia-Zdroju oraz całego województwa śląskiego.</p>
+        <p>Jeżeli potrzebujesz pomocy w doborze odpowiedniego sprzętu lub masz pytania dotyczące wymagań UDT, skontaktuj się z naszym zespołem. Chętnie doradzimy najlepsze rozwiązanie dla Twojej inwestycji.</p>
+        </div>
+      </article>
+
+      <article class="post" id="artykul-5">
+        <header class="post__head">
+          <span class="post__cat">Bezpieczeństwo</span>
+          <h2 class="post__title">Przygotowanie terenu pod pracę podestu ruchomego: poradnik dla kierowników budowy</h2>
+          <div class="post__meta"><span>4Rent</span><span aria-hidden="true">•</span><span>Czerwiec 2026</span></div>
+        </header>
+        <img class="post__cover" src="assets/articles/artykul-5.jpg" alt="Przygotowanie terenu pod pracę podestu ruchomego" loading="lazy">
+        <div class="article__body">
+        <p>Podesty ruchome są nieocenionym wsparciem podczas prac budowlanych, montażowych i serwisowych wykonywanych na wysokości. Jednak nawet najnowocześniejsza maszyna nie zapewni bezpieczeństwa, jeśli teren pracy nie zostanie odpowiednio przygotowany. To właśnie właściwa organizacja stanowiska pracy ma kluczowe znaczenie dla bezpieczeństwa operatorów oraz sprawnej realizacji inwestycji.</p>
+        <p>W tym artykule przedstawiamy najważniejsze zasady przygotowania terenu pod pracę podestów ruchomych.</p>
+        <h3>Dlaczego przygotowanie terenu jest tak ważne?</h3>
+        <p>Nieprawidłowo przygotowane stanowisko pracy może prowadzić do:</p>
+        <ul><li>utraty stabilności maszyny,</li><li>uszkodzenia sprzętu,</li><li>opóźnień w realizacji prac,</li><li>zagrożenia zdrowia i życia pracowników,</li><li>kosztownych przestojów na budowie.</li></ul>
+        <p>Dlatego kierownik budowy powinien każdorazowo przeanalizować warunki pracy jeszcze przed dostarczeniem podestu na miejsce realizacji inwestycji.</p>
+        <h3>Ocena nośności podłoża</h3>
+        <p>Jednym z najważniejszych elementów jest sprawdzenie, czy grunt jest w stanie bezpiecznie przenieść ciężar maszyny.</p>
+        <p>Należy zwrócić uwagę na:</p>
+        <ul><li>świeżo wykonane wykopy,</li><li>studzienki i kanały technologiczne,</li><li>nieutwardzone pobocza,</li><li>grząskie lub podmokłe tereny,</li><li>miejsca zasypane po wcześniejszych pracach ziemnych.</li></ul>
+        <p>W przypadku wątpliwości warto zastosować dodatkowe płyty rozkładające nacisk lub wyznaczyć alternatywne miejsce ustawienia urządzenia.</p>
+        <h3>Sprawdzenie przeszkód terenowych</h3>
+        <p>Przed rozpoczęciem pracy należy dokładnie przeanalizować otoczenie.</p>
+        <p>Szczególną uwagę należy zwrócić na:</p>
+        <ul><li>słupy energetyczne,</li><li>linie wysokiego napięcia,</li><li>rusztowania,</li><li>konstrukcje stalowe,</li><li>drzewa i gałęzie,</li><li>ogrodzenia,</li><li>elementy infrastruktury technicznej.</li></ul>
+        <p>Kolizja z przeszkodą może doprowadzić do uszkodzenia maszyny lub stworzyć zagrożenie dla operatora.</p>
+        <h3>Wyznaczenie strefy pracy</h3>
+        <p>Każde stanowisko pracy powinno zostać odpowiednio oznakowane.</p>
+        <p>Warto zastosować:</p>
+        <ul><li>pachołki ostrzegawcze,</li><li>taśmy zabezpieczające,</li><li>bariery ochronne,</li><li>tablice informacyjne.</li></ul>
+        <p>Pozwala to ograniczyć dostęp osób postronnych do strefy pracy i zmniejsza ryzyko wypadków.</p>
+        <h3>Zachowanie bezpiecznej odległości od linii energetycznych</h3>
+        <p>Prace w pobliżu instalacji elektrycznych wymagają szczególnej ostrożności.</p>
+        <p>Przed rozpoczęciem prac należy:</p>
+        <ul><li>ustalić przebieg linii energetycznych,</li><li>sprawdzić wymagane odległości bezpieczeństwa,</li><li>poinformować operatora o potencjalnych zagrożeniach.</li></ul>
+        <p>Porażenie prądem należy do najpoważniejszych zagrożeń występujących podczas pracy podestów ruchomych.</p>
+        <h3>Analiza warunków pogodowych</h3>
+        <p>Silny wiatr, intensywne opady czy oblodzenie mogą znacząco wpływać na bezpieczeństwo pracy.</p>
+        <p>Przed rozpoczęciem prac warto sprawdzić:</p>
+        <ul><li>prognozę pogody,</li><li>siłę wiatru,</li><li>możliwość wystąpienia burz,</li><li>stan nawierzchni po opadach.</li></ul>
+        <p>W przypadku niekorzystnych warunków pogodowych prace należy przełożyć lub zastosować dodatkowe środki bezpieczeństwa.</p>
+        <h3>Zapewnienie odpowiedniej przestrzeni manewrowej</h3>
+        <p>Podest ruchomy wymaga miejsca nie tylko do pracy, ale również do bezpiecznego przemieszczania się.</p>
+        <p>Kierownik budowy powinien uwzględnić:</p>
+        <ul><li>szerokość dróg dojazdowych,</li><li>promień skrętu maszyny,</li><li>miejsce do rozstawienia urządzenia,</li><li>możliwość ewakuacji w sytuacji awaryjnej.</li></ul>
+        <p>Ograniczona przestrzeń może utrudniać pracę operatora i zwiększać ryzyko uszkodzenia sprzętu.</p>
+        <h3>Kontrola przed rozpoczęciem pracy</h3>
+        <p>Przed uruchomieniem podestu operator powinien przeprowadzić codzienną kontrolę urządzenia obejmującą:</p>
+        <ul><li>stan ogumienia,</li><li>poziom płynów eksploatacyjnych,</li><li>działanie systemów bezpieczeństwa,</li><li>sprawność sterowania,</li><li>stan kosza roboczego.</li></ul>
+        <p>Regularna kontrola pozwala wykryć ewentualne usterki jeszcze przed rozpoczęciem pracy.</p>
+        <h3>Korzyści z właściwego przygotowania terenu</h3>
+        <p>Dobrze przygotowane stanowisko pracy oznacza:</p>
+        <ul><li>większe bezpieczeństwo pracowników,</li><li>szybszą realizację inwestycji,</li><li>mniejsze ryzyko awarii,</li><li>ograniczenie kosztownych przestojów,</li><li>efektywniejsze wykorzystanie wynajętego sprzętu.</li></ul>
+        <h3>Wynajem podestów ruchomych na Śląsku</h3>
+        <p>Nasza firma oferuje wynajem nowoczesnych podestów nożycowych, przegubowych oraz teleskopowych. Pomagamy klientom nie tylko w doborze odpowiedniego sprzętu, ale również doradzamy w zakresie przygotowania terenu i organizacji bezpiecznej pracy na wysokości.</p>
+        <p>Obsługujemy klientów z Rybnika, Wodzisławia Śląskiego, Raciborza, Żor, Jastrzębia-Zdroju oraz całego województwa śląskiego.</p>
+        <p>Jeżeli planujesz prace na wysokości i potrzebujesz sprawdzonego sprzętu, skontaktuj się z naszym zespołem. Chętnie pomożemy wybrać najlepsze rozwiązanie dla Twojej inwestycji.</p>
+        </div>
+      </article>
+
+      <article class="post" id="artykul-6">
+        <header class="post__head">
+          <span class="post__cat">Eksploatacja</span>
+          <h2 class="post__title">Dbanie o akumulatory trakcyjne: jak wydłużyć ich żywotność i uniknąć kosztownych awarii?</h2>
+          <div class="post__meta"><span>4Rent</span><span aria-hidden="true">•</span><span>Czerwiec 2026</span></div>
+        </header>
+        <img class="post__cover" src="assets/articles/artykul-6.jpg" alt="Dbanie o akumulatory trakcyjne" loading="lazy">
+        <div class="article__body">
+        <p>Akumulatory trakcyjne są sercem wielu urządzeń wykorzystywanych w przemyśle i budownictwie, od podestów ruchomych po wózki widłowe. Ich prawidłowa eksploatacja ma bezpośredni wpływ na wydajność pracy, bezpieczeństwo oraz koszty utrzymania sprzętu. Regularna konserwacja pozwala znacząco wydłużyć żywotność baterii i ograniczyć ryzyko nieplanowanych przestojów.</p>
+        <h3>Dlaczego warto dbać o akumulatory trakcyjne?</h3>
+        <p>Prawidłowo użytkowany akumulator trakcyjny może pracować przez wiele lat, zachowując wysoką sprawność i pojemność. Zaniedbania w zakresie ładowania, czyszczenia czy kontroli stanu technicznego prowadzą do szybszego zużycia ogniw, spadku wydajności oraz kosztownych napraw.</p>
+        <h3>1. Prawidłowe ładowanie</h3>
+        <p>Najważniejszą zasadą jest stosowanie ładowarki przeznaczonej do danego typu akumulatora. Proces ładowania powinien być zawsze doprowadzony do końca, zgodnie z zaleceniami producenta. Nie należy pozostawiać akumulatorów przez dłuższy czas w stanie rozładowania.</p>
+        <h3>Dobre praktyki:</h3>
+        <ul><li>Ładuj akumulator po zakończeniu pracy.</li><li>Nie przerywaj cyklu ładowania bez potrzeby.</li><li>Korzystaj wyłącznie z dedykowanych prostowników.</li><li>Zapewnij odpowiednią wentylację pomieszczenia podczas ładowania.</li></ul>
+        <h3>2. Kontrola poziomu elektrolitu</h3>
+        <p>W przypadku akumulatorów kwasowo-ołowiowych konieczne jest regularne sprawdzanie poziomu elektrolitu. Do uzupełniania należy używać wyłącznie wody destylowanej lub demineralizowanej. Nigdy nie należy dolewać zwykłej wody z kranu.</p>
+        <h3>3. Utrzymanie czystości</h3>
+        <p>Brud, kurz i wilgoć mogą powodować powstawanie prądów upływu oraz przyspieszać korozję połączeń elektrycznych. Regularne czyszczenie obudowy, biegunów i przewodów pozwala zachować wysoką sprawność baterii.</p>
+        <h3>4. Unikanie głębokiego rozładowania</h3>
+        <p>Akumulatory trakcyjne nie powinny być rozładowywane do zera. Zbyt głębokie rozładowanie prowadzi do trwałego obniżenia pojemności i skrócenia żywotności ogniw. Zaleca się rozpoczęcie ładowania zanim poziom energii spadnie do krytycznych wartości.</p>
+        <h3>5. Regularne przeglądy techniczne</h3>
+        <p>Warto systematycznie kontrolować:</p>
+        <ul><li>stan przewodów i złączy,</li><li>poziom napięcia,</li><li>stan obudowy,</li><li>ewentualne wycieki lub uszkodzenia mechaniczne.</li></ul>
+        <p>Wczesne wykrycie nieprawidłowości pozwala uniknąć kosztownych awarii i wydłuża czas bezawaryjnej eksploatacji.</p>
+        <h3>6. Odpowiednie warunki pracy</h3>
+        <p>Akumulatory najlepiej pracują w umiarkowanych temperaturach. Zarówno bardzo wysokie, jak i bardzo niskie temperatury mogą negatywnie wpływać na ich wydajność i trwałość. Należy również chronić baterie przed nadmierną wilgocią oraz zabrudzeniami.</p>
+        <h3>Najczęstsze błędy użytkowników</h3>
+        <ul><li>Przerywanie cyklu ładowania</li><li>Pozostawianie rozładowanej baterii na dłuższy czas</li><li>Dolewanie zwykłej wody zamiast destylowanej</li><li>Brak regularnej kontroli poziomu elektrolitu</li><li>Ignorowanie zabrudzeń i oznak korozji</li><li>Praca na uszkodzonych przewodach lub złączach</li></ul>
+        <h3>Podsumowanie</h3>
+        <p>Dbanie o akumulatory trakcyjne nie wymaga skomplikowanych działań, ale wymaga systematyczności. Regularne ładowanie, kontrola elektrolitu, utrzymanie czystości oraz okresowe przeglądy techniczne pozwalają znacząco wydłużyć żywotność baterii, zwiększyć bezpieczeństwo pracy i ograniczyć koszty eksploatacji sprzętu. To niewielki wysiłek, który przekłada się na większą niezawodność podestów ruchomych i innych urządzeń wykorzystywanych na co dzień w pracy.</p>
+        </div>
+      </article>
+
+      <!-- KONIEC listy artykułów. -->
+
 
     </div>
   </section>
@@ -143,22 +438,9 @@
     <div class="footer__grid">
       <div class="footer__brand">
         <a href="index.html" class="logo" aria-label="4Rent">
-          <svg class="logo__mark" viewBox="0 0 96 96" aria-hidden="true">
-        <g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" opacity=".9">
-          <line x1="21" y1="29" x2="75" y2="29"/><line x1="21" y1="29" x2="21" y2="47"/><line x1="75" y1="29" x2="75" y2="47"/>
-        </g>
-        <text x="48" y="46" text-anchor="middle" font-family="'Saira Condensed','Arial Narrow',sans-serif" font-weight="800" font-size="23" fill="currentColor">4R</text>
-        <rect x="17" y="47" width="62" height="7" rx="2" fill="currentColor"/>
-        <g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" opacity=".6">
-          <line x1="30" y1="55" x2="66" y2="68"/><line x1="66" y1="55" x2="30" y2="68"/><line x1="30" y1="63" x2="66" y2="76"/><line x1="66" y1="63" x2="30" y2="76"/>
-        </g>
-        <g fill="#2E90E5"><circle cx="48" cy="61.5" r="2.1"/><circle cx="48" cy="69.5" r="2.1"/></g>
-        <rect x="24" y="75" width="48" height="7" rx="2" fill="currentColor"/>
-        <g fill="currentColor"><circle cx="34" cy="86" r="7"/><circle cx="62" cy="86" r="7"/></g>
-      </svg>
+          <img class="logo__img" src="assets/logo-4rent-white.png" alt="4Rent Wypożyczalnia Maszyn Budowlanych" width="60" height="50">
           <span class="logo__text">
             <span class="logo__name"><b>4</b>RENT</span>
-            <span class="logo__sub">Wypożyczalnia maszyn · Śląsk</span>
           </span>
         </a>
         <p class="footer__about">Wynajem podestów ruchomych i ładowarek teleskopowych na terenie Katowic, Gliwic, Chorzowa i okolicznych miast.</p>

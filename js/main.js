@@ -115,4 +115,68 @@
   /* ---- Rok w stopce ---------------------------------------------------- */
   var yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  /* ---- Modal specyfikacji maszyny -------------------------------------- */
+  var specModal = document.getElementById("specModal");
+  if (specModal) {
+    var pagesBox  = document.getElementById("specModalPages");
+    var bodyBox   = document.getElementById("specModalBody");
+    var titleEl   = document.getElementById("specModalTitle");
+    var eyebrowEl = document.getElementById("specModalEyebrow");
+    var dlEl      = document.getElementById("specModalDownload");
+    var lastFocus = null;
+
+    function openSpec(card) {
+      var title = card.getAttribute("data-spec-title") || "Specyfikacja";
+      var cat   = card.getAttribute("data-spec-cat") || "Specyfikacja";
+      var pdf   = card.getAttribute("data-spec-pdf") || "#";
+      var pages = (card.getAttribute("data-spec-pages") || "").split(",");
+
+      titleEl.textContent = title;
+      eyebrowEl.textContent = cat;
+      dlEl.setAttribute("href", pdf);
+      dlEl.setAttribute("download", title.replace(/[\\/\s]+/g, "-") + ".pdf");
+
+      pagesBox.innerHTML = "";
+      pages.forEach(function (src, i) {
+        src = src.trim();
+        if (!src) return;
+        var img = document.createElement("img");
+        img.src = src;
+        img.loading = "lazy";
+        img.alt = title + ", specyfikacja, strona " + (i + 1);
+        pagesBox.appendChild(img);
+      });
+      if (bodyBox) bodyBox.scrollTop = 0;
+
+      lastFocus = document.activeElement;
+      body.classList.add("spec-open");
+      specModal.classList.add("is-open");
+      specModal.setAttribute("aria-hidden", "false");
+      var closeBtn = specModal.querySelector("[data-spec-close]");
+      if (closeBtn && closeBtn.focus) closeBtn.focus();
+    }
+
+    function closeSpec() {
+      specModal.classList.remove("is-open");
+      specModal.setAttribute("aria-hidden", "true");
+      body.classList.remove("spec-open");
+      pagesBox.innerHTML = "";
+      if (lastFocus && lastFocus.focus) lastFocus.focus();
+    }
+
+    document.querySelectorAll("[data-spec-open]").forEach(function (el) {
+      el.addEventListener("click", function (e) {
+        e.preventDefault();
+        var card = el.closest(".lift-card");
+        if (card) openSpec(card);
+      });
+    });
+    specModal.querySelectorAll("[data-spec-close]").forEach(function (el) {
+      el.addEventListener("click", closeSpec);
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && specModal.classList.contains("is-open")) closeSpec();
+    });
+  }
 })();

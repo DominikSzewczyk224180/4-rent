@@ -1,0 +1,24 @@
+<svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="4Rent">
+  <!-- barierka kosza -->
+  <g fill="none" stroke="#52748F" stroke-width="2.4" stroke-linecap="round">
+    <line x1="21" y1="29" x2="75" y2="29"/>
+    <line x1="21" y1="29" x2="21" y2="47"/>
+    <line x1="75" y1="29" x2="75" y2="47"/>
+  </g>
+  <!-- 4R -->
+  <text x="48" y="46" text-anchor="middle" font-family="'Saira Condensed','Arial Narrow',sans-serif" font-weight="800" font-size="23" fill="#152F4F" letter-spacing="0.5">4R</text>
+  <!-- podest -->
+  <rect x="17" y="47" width="62" height="7" rx="2" fill="#152F4F"/>
+  <!-- mechanizm nożycowy -->
+  <g fill="none" stroke="#52748F" stroke-width="4" stroke-linecap="round">
+    <line x1="30" y1="55" x2="66" y2="68"/>
+    <line x1="66" y1="55" x2="30" y2="68"/>
+    <line x1="30" y1="63" x2="66" y2="76"/>
+    <line x1="66" y1="63" x2="30" y2="76"/>
+  </g>
+  <g fill="#2E90E5"><circle cx="48" cy="61.5" r="2.1"/><circle cx="48" cy="69.5" r="2.1"/></g>
+  <!-- podwozie + koła -->
+  <rect x="24" y="75" width="48" height="7" rx="2" fill="#152F4F"/>
+  <g fill="#152F4F"><circle cx="34" cy="86" r="7"/><circle cx="62" cy="86" r="7"/></g>
+  <g fill="#7d99af"><circle cx="34" cy="86" r="2.6"/><circle cx="62" cy="86" r="2.6"/></g>
+</svg>
